@@ -13,7 +13,7 @@
 	var/where_accessory //! where the accessory spawned
 	var/obj/item/accessory_type //! If this is null, an accessory won't be spawned.
 	var/drug_flavour_text = "Better hope you don't run out... of what, exactly? You don't know."
-	var/process_interval = 30 SECONDS //! how frequently the quirk processes
+	var/process_interval = 30 MINUTES //! how frequently the quirk processes	// GS13 EDIT make addiction less annoying to deal with. Original: 30 SECONDS
 	COOLDOWN_DECLARE(next_process) //! ticker for processing
 
 /datum/quirk/item_quirk/addict/add_unique(client/client_source)
@@ -25,7 +25,7 @@
 	reagent_instance = new reagent_type()
 
 	for(var/addiction in reagent_instance.addiction_types)
-		human_holder.last_mind?.add_addiction_points(addiction, 1000)
+		human_holder.last_mind?.add_addiction_points(addiction, 610)	// GS13 EDIT let's JUUUUST barely scrape the addiction trigger threshold. Original: 1000
 
 	var/current_turf = get_turf(quirk_holder)
 
@@ -77,7 +77,7 @@
 			reagent_instance = new reagent_type()
 		to_chat(quirk_holder, span_danger("You thought you kicked it, but you feel like you're falling back onto bad habits.."))
 		for(var/addiction in reagent_instance.addiction_types)
-			human_holder.last_mind?.add_addiction_points(addiction, 1000) ///Max that shit out
+			human_holder.last_mind?.add_addiction_points(addiction, 610) ///Max that shit out	// GS13 EDIT: yeah maybe not. Original: 1000
 
 /datum/quirk/item_quirk/addict/junkie
 	name = "Junkie"

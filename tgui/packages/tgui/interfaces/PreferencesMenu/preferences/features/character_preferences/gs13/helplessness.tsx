@@ -1,8 +1,8 @@
 import {
+  CheckboxInput,
   type Feature,
   FeatureNumberInput,
   type FeatureNumeric,
-  CheckboxInput,
   type FeatureToggle,
 } from '../../base';
 
@@ -50,19 +50,22 @@ export const clothing_jumpsuit: Feature<number> = {
 
 export const clothing_misc: Feature<number> = {
   name: 'Other clothing bursting',
-  description: 'At what weight does your non-jumpsuit clothing burst? 0 disables this.',
+  description:
+    'At what weight does your non-jumpsuit clothing burst? 0 disables this.',
   component: FeatureNumberInput,
 };
 
 export const belts: Feature<number> = {
   name: 'Belts breaking',
-  description: 'At what weight does your belt break? This will also cause your belt to break if your fullness exceeds stage 2. 0 disables this.',
+  description:
+    'At what weight does your belt break? This will also cause your belt to break if your fullness exceeds stage 2. 0 disables this.',
   component: FeatureNumberInput,
 };
 
 export const clothing_back: Feature<number> = {
   name: 'Clothing back bursting',
-  description: 'At what weight do you become unable to wear items on your back? 0 disables this.',
+  description:
+    'At what weight do you become unable to wear items on your back? 0 disables this.',
   component: FeatureNumberInput,
 };
 
@@ -74,19 +77,29 @@ export const no_buckle: Feature<number> = {
 
 export const chair_breakage: Feature<number> = {
   name: 'Chair breaking',
-  description: 'At what weight will you start breaking chairs? 0 disables this.',
+  description:
+    'At what weight will you start breaking chairs? 0 disables this.',
   component: FeatureNumberInput,
 };
 
 export const stuckage: Feature<number> = {
   name: 'Door stuckage',
-  description: 'At what weight will you start getting stuck in doors? 0 disables this.',
+  description:
+    'At what weight will you start getting stuck in doors? 0 disables this.',
   component: FeatureNumberInput,
 };
 
 export const stuckage_custom: Feature<number> = {
   name: 'Custom Door stuckage chance',
-  description: 'What chance do you want to get stuck in doors? Setting this to 0 will reset it to default.',
+  description:
+    'What chance do you want to get stuck in doors? Setting this to 0 will reset it to default.',
+  component: FeatureNumberInput,
+};
+
+export const blueberry_max_before_burst: Feature<number> = {
+  name: 'Blueberry inflation bursting limit',
+  description:
+    'What is the maximum amount of blueberry juice your body can take before bursting. When your character reaches this amount of juice in their body, it will trigger a bursting pop up. You will not burst instantly, but will be given a choice how to handle it or even delay it all together.\nPut 0 to disable.',
   component: FeatureNumberInput,
 };
 

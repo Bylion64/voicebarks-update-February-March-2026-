@@ -183,11 +183,13 @@
 	. = ..()
 	handle_layer()
 	//SKYRAT EDIT ADDITION
+	/*	// GS13 EDIT - removes oversized characters being unable to buckle
 	if(HAS_TRAIT(M, TRAIT_OVERSIZED))
 		visible_message(span_warning("[src] buckles under the weight of [M] causing it to break!"))
 		playsound(src, 'modular_skyrat/modules/oversized/sound/chair_break.ogg', 70, TRUE)
 		deconstruct()
 	//SKYRAT EDIT END
+	*/	// GS13 END EDIT
 	if (has_armrest)
 		update_armrest()
 

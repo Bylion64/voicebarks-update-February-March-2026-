@@ -1,6 +1,0 @@
-author: "Phantastic-Swan"
-delete-after: True
-changes:
-  - rscadd: "added the thick neck pref and quirk, which will prevent you from wearing items around your neck slot"
-  - rscadd: "added the reduced FOV helplessness pref - reduces the player's FOV to 180 degrees in front at the weight set in the pref, and to 90 degrees in the front when exceeding double the set value."
-  - rscdel: "nearsightedness helplessness pref was removed"

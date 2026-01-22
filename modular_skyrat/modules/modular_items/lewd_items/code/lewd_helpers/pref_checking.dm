@@ -36,12 +36,12 @@
 
 
 /// Checks the prefs of all mobs in `view()`. If there is a mob with the `pref_to_check` set to false, we return `FALSE` otherwise, we return `TRUE`
-/mob/living/proc/check_prefs_in_view(datum/preference/toggle/pref_to_check)
+/mob/living/proc/check_prefs_in_view(datum/preference/toggle/pref_to_check, center)
 	if(!ispath(pref_to_check))
 		return FALSE
 
 	var/no_viewer_with_false_prefs = TRUE
-	for(var/mob/living/viewer in dview())
+	for(var/mob/living/viewer in dview(center = center))
 		if(!viewer?.client) // It doens't really matter if these people see it.
 			continue
 

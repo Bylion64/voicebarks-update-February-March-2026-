@@ -1,8 +1,0 @@
-author: "Swan"
-delete-after: True
-changes:
-  - rscadd: "ports the adipoelectric generator - this machine turns fat into electrical power"
-  - rscadd: "ports the adipoelectric transformer - this machine turns electricity into fat"
-  - balance: "allows for the primitive BS belt to be craftable at round start, provided silver is available"
-  - balance: "increases the power draw of the primitive BS belt"
-  - bugfix: "fixes beanbags not being craftable"

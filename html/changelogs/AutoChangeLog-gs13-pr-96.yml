@@ -1,6 +1,0 @@
-author: "Swan"
-delete-after: True
-changes:
-  - rscadd: "GS13 changelogs will now display in game"
-  - code_imp: "updated code for automatic changelog generation to tag our PR files with a `gs13` tag"
-  - code_imp: "updated code for changelog compilation to compile our changelogs, and only those with the `gs13` tag"

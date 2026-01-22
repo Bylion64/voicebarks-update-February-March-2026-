@@ -1,5 +1,0 @@
-author: "Swan"
-delete-after: True
-changes:
-  - rscadd: "Adds the caloray. It is a weapon which can either discharge a cell to fatten someone up, or thin someone down while charging a powercell. It uses a continous beam which latches onto the target. It is available from the nutri-tech weapons research node. Sprites were made by Clumpy."
-  - balance: "lowers the material cost of fatorays and al-T rays 10x - because using 13 calorite sheets for a gun is a bit much."

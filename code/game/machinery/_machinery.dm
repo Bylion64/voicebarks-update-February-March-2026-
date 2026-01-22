@@ -446,7 +446,7 @@
 				continue
 			if(isliving(current_atom))
 				var/mob/living/current_mob = atom
-				if(current_mob.buckled || current_mob.mob_size >= MOB_SIZE_LARGE)
+				if(current_mob.buckled/* GS13 EDIT || current_mob.mob_size >= MOB_SIZE_LARGE*/)
 					continue
 			target = atom
 

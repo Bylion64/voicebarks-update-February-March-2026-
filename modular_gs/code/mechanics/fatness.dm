@@ -47,6 +47,8 @@
 * * adjustment_amount - adjusts how much weight is gained or loss. Positive numbers add weight.
 * * type_of_fattening - what type of fattening is being used. Look at the traits in fatness.dm for valid options.
 * * ignore_rate - do we want to ignore the mob's weight gain/loss rate? This is only here for niche uses.
+*
+* * returns the amount of BFI applied onto target
 */
 /mob/living/carbon/proc/adjust_fatness(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM, ignore_rate = FALSE)
 	if(!adjustment_amount || !type_of_fattening)
@@ -79,28 +81,7 @@
 	perma_apply()	//Check and apply for permanent fat
 	xwg_resize()	//Apply XWG
 
-	/*
-	// Handle Awards
-	if(client)
-		if(fatness > FATNESS_LEVEL_BLOB)
-			client.give_award(/datum/award/achievement/fat/blob, src)
-		if(fatness > 10000)
-			client.give_award(/datum/award/achievement/fat/milestone_one, src)
-		if(fatness > 25000)
-			client.give_award(/datum/award/achievement/fat/milestone_two, src)
-		if(fatness > 50000)
-			client.give_award(/datum/award/achievement/fat/milestone_three, src)
-		if(fatness > 100000)
-			client.give_award(/datum/award/achievement/fat/milestone_four, src)
-		if(fatness > 500000)
-			client.give_award(/datum/award/achievement/fat/milestone_five, src)
-		if(fatness > 1000000)
-			client.give_award(/datum/award/achievement/fat/milestone_six, src)
-		if(fatness > 10000000)
-			client.give_award(/datum/award/achievement/fat/milestone_seven, src)
-		*/
-
-	return TRUE
+	return amount_to_change
 
 /// returns the total value of all WG modifiers
 /mob/living/carbon/proc/get_weight_gain_modifiers()
@@ -118,10 +99,10 @@
 
 /**
  * Adds a weight gain modifier to the modifier list
- * 
+ *
  * If the modifier doesn't exist yet, adds it as an entry and sets it's value. If it does exist, adds value to it.
- * 
- * Arguments: 
+ *
+ * Arguments:
  * * source - value containing the identifier of the source, IDEALLY a string
  * * value - value to add to the modifier
  */
@@ -129,12 +110,12 @@
 	if (weight_gain_modifiers[source])
 		weight_gain_modifiers[source] += value
 		return
-	
+
 	weight_gain_modifiers[source] = value
 
 /**
  * Sets a weight gain modifier in the modifier list
- * 
+ *
  * Will always set the modifier to the set value, regardless of the previously stored value
  * Arguments:
  * * source - value containing the identifier of the source, IDEALLY a string
@@ -145,10 +126,10 @@
 
 /**
  * Adds a weight loss modifier to the modifier list
- * 
+ *
  * If the modifier doesn't exist yet, adds it as an entry and sets it's value. If it does exist, adds value to it.
- * 
- * Arguments: 
+ *
+ * Arguments:
  * * source - value containing the identifier of the source, IDEALLY a string
  * * value - value to add to the modifier
  */
@@ -156,12 +137,12 @@
 	if (weight_loss_modifiers[source])
 		weight_loss_modifiers[source] += value
 		return
-	
+
 	weight_loss_modifiers[source] = value
 
 /**
  * Sets a weight loss modifier in the modifier list
- * 
+ *
  * Will always set the modifier to the set value, regardless of the previously stored value
  * Arguments:
  * * source - value containing the identifier of the source, IDEALLY a string
@@ -174,28 +155,28 @@
 /mob/living/carbon/proc/get_weight_gain_modifier(source)
 	if (weight_gain_modifiers[source])
 		return weight_gain_modifiers[source]
-	
+
 	return 0
 
 /// returns the current value of given weight loss modifier. If such a modifier doesn't exits, returns 0
 /mob/living/carbon/proc/get_weight_loss_modifier(source)
 	if (weight_loss_modifiers[source])
 		return weight_loss_modifiers[source]
-	
+
 	return 0
 
 /// completely removes a weight gain modifier from the list
 /mob/living/carbon/proc/remove_weight_gain_modifier(source)
 	if (!weight_gain_modifiers[source])
 		return
-	
+
 	weight_gain_modifiers.Remove(source)
 
 /// completely removes a weight loss modifier from the list
 /mob/living/carbon/proc/remove_weight_loss_modifier(source)
 	if (!weight_loss_modifiers[source])
 		return
-	
+
 	weight_loss_modifiers.Remove(source)
 
 /// removes all weight gain modifiers
@@ -212,12 +193,12 @@
 
 	if (HAS_TRAIT(src, TRAIT_UNIVERSAL_GAINER))
 		local_gain_rate = max(0.2, local_gain_rate)
-	
+
 	local_gain_rate += get_weight_gain_modifiers()
-	
+
 	if (flip_gain_rate)
 		local_gain_rate = -local_gain_rate
-	
+
 	return local_gain_rate
 
 /// returns the final weight loss rate of a carbon, taking into account all modifiers, flips, traits etc
@@ -226,12 +207,12 @@
 
 	if (HAS_TRAIT(src, TRAIT_UNIVERSAL_GAINER))
 		local_loss_rate = min(0.5, local_loss_rate)
-	
+
 	local_loss_rate += get_weight_loss_modifiers()
-	
+
 	if (flip_loss_rate)
 		local_loss_rate = -local_loss_rate
-	
+
 	return local_loss_rate
 
 /mob/living/carbon/get_fullness(only_consumable)
@@ -362,25 +343,22 @@
 
 	var/amount_to_change = adjustment_amount
 
-	var/local_gain_rate = weight_gain_rate
-	var/local_lose_rate = weight_loss_rate
-
-	if (HAS_TRAIT(src, TRAIT_UNIVERSAL_GAINER))
-		local_gain_rate = 0.2
-		local_lose_rate = 0.2
-
+	var/gain_rate = get_weight_gain_rate()
+	var/lose_rate = get_weight_loss_rate()
 
 	if(!ignore_rate)
 		if(adjustment_amount > 0)
-			amount_to_change = amount_to_change * local_gain_rate
+			amount_to_change = amount_to_change * gain_rate
 		else
-			amount_to_change = amount_to_change * local_lose_rate
+			amount_to_change = amount_to_change * lose_rate
 
 	fatness_perma += amount_to_change
 	fatness_perma = max(fatness_perma, MINIMUM_FATNESS_LEVEL)
 
 	if(max_weight && !HAS_TRAIT(src, TRAIT_UNIVERSAL_GAINER))
 		fatness_perma = min(fatness_perma, (max_weight - 1))
+	
+	return amount_to_change
 
 /mob/living/carbon/human/handle_breathing(times_fired)
 	. = ..()

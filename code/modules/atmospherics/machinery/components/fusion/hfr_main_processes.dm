@@ -449,9 +449,21 @@
 
 	// If we have a preposterous amount of mass in the fusion mix, things get bad extremely fast
 	if(internal_fusion.total_moles() >= HYPERTORUS_HYPERCRITICAL_MOLES)
-		var/hypercritical_damage_taken = max((internal_fusion.total_moles() - HYPERTORUS_HYPERCRITICAL_MOLES) * HYPERTORUS_HYPERCRITICAL_SCALE, 0)
-		critical_threshold_proximity = max(critical_threshold_proximity + min(hypercritical_damage_taken, HYPERTORUS_HYPERCRITICAL_MAX_DAMAGE), 0) * seconds_per_tick
+		// GS13 EDIT - this fixes the damage from too many moles scaling quadratically with time
+		// and makes the code more readable
+		// if this ever becomes a merge conflict, either ask me (Swan) or use your own judgement
+		// documentation of the issues this edit indendet to fix can be found in issue
+		// #111 on our GS13 Blubberstation repo and issue #94786 on TG station repo
+		/* original code:
+		// var/hypercritical_damage_taken = max((internal_fusion.total_moles() - HYPERTORUS_HYPERCRITICAL_MOLES) * HYPERTORUS_HYPERCRITICAL_SCALE, 0)
+		// critical_threshold_proximity = max(critical_threshold_proximity + min(hypercritical_damage_taken, HYPERTORUS_HYPERCRITICAL_MAX_DAMAGE), 0) * seconds_per_tick
+		*/
+		var/moles_over_limit = internal_fusion.total_moles() - HYPERTORUS_HYPERCRITICAL_MOLES
+		var/hypercritical_damage_taken = max(moles_over_limit * HYPERTORUS_HYPERCRITICAL_SCALE, 0)
+		hypercritical_damage_taken = min(hypercritical_damage_taken, HYPERTORUS_HYPERCRITICAL_MAX_DAMAGE) * seconds_per_tick
+		critical_threshold_proximity = max(critical_threshold_proximity + hypercritical_damage_taken, 0)
 		warning_damage_flags |= HYPERTORUS_FLAG_HIGH_FUEL_MIX_MOLE
+		// GS13 END EDIT
 
 	// High power fusion might create other matter other than helium, iron is dangerous inside the machine, damage can be seen
 	if(power_level > 4 && prob(IRON_CHANCE_PER_FUSION_LEVEL * power_level))//at power level 6 is 100%

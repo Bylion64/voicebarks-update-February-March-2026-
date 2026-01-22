@@ -51,7 +51,7 @@
 		return
 
 	if((squash_flags & SQUASHED_SHOULD_BE_DOWN) && parent_as_living.body_position != LYING_DOWN)
-		parent_as_living.Knockdown(1 SECONDS) // BUBBER EDIT - MICRO BALANCE
+		// parent_as_living.Knockdown(1 SECONDS) // BUBBER EDIT - MICRO BALANCE	// GS13 EDIT remove knockdown completely
 		return
 
 	var/should_squash = ((squash_flags & SQUASHED_ALWAYS_IF_DEAD) && parent_as_living.stat == DEAD) || prob(squash_chance)

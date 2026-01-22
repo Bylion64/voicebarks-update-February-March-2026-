@@ -1,8 +1,0 @@
-author: "Swan"
-delete-after: True
-changes:
-  - rscadd: "added breast feeding mechanics. Players will now be allowed to drink milk directly from their own, or another player's breasts, as well as feed other players, providing some conditions are met (prefs, tits, lactation from them etc)"
-  - rscadd: "breasts now produce milk directly after spawning in, not just after being stimulated"
-  - rscadd: "you can now choose the reagents your breasts will produce from a list of approved reagents"
-  - rscadd: "alien honey, which has the stats of regular honey, but doesn't heal nor add sugar (so no sugar overdose)"
-  - code_imp: "adds a new interaction usage, for interactions only meant to work on the player performing them"

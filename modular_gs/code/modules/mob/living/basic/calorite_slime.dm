@@ -119,6 +119,31 @@
 	else
 		.=..()
 
+// Overwrites death(gibbed) so that it'll actually work with calorite slimes and not produce invisible death balls
+/mob/living/basic/slime/calorite/death(gibbed)
+	if(stat == DEAD)
+		return
+	if(!gibbed && life_stage == SLIME_LIFE_STAGE_ADULT)
+		var/mob/living/basic/slime/calorite/new_slime = new(drop_location(), slime_type.type)
+
+		new_slime.ai_controller?.set_blackboard_key(BB_SLIME_RABID, TRUE)
+		new_slime.regenerate_icons()
+
+		//revives us as a baby
+		set_life_stage(SLIME_LIFE_STAGE_BABY)
+		revive(HEAL_ALL)
+		regenerate_icons()
+		update_name()
+		return
+
+	if(buckled)
+		stop_feeding(silent = TRUE) //releases ourselves from the mob we fed on.
+
+	cut_overlays()
+
+	return ..(gibbed)
+
+
 //Slight change to AI so it will immediately begin feeding on humans
 /datum/ai_controller/basic_controller/slime/calorite
 	planning_subtrees = list(
