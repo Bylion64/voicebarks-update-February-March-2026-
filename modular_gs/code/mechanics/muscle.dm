@@ -37,7 +37,7 @@
 	if(!intensity)
 		return FALSE
 
-	if(getStaminaLoss() >= WORKOUT_STAMINA_THRESHOLD)
+	if(get_stamina_loss() >= WORKOUT_STAMINA_THRESHOLD)
 		to_chat(src, span_warning("You are too exhausted to continue!"))
 		return FALSE
 
@@ -45,7 +45,7 @@
 	if(custom_stamina_cost != null)
 		stamina_cost = custom_stamina_cost
 
-	if(stamina_cost && !adjustStaminaLoss(stamina_cost))
+	if(stamina_cost && !adjust_stamina_loss(stamina_cost))
 		return FALSE
 
 	// Alright, we have pain, now time for gain. How ripped are we getting from this?

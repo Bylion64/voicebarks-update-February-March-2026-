@@ -132,3 +132,42 @@
   - map: fixed errors in SM air loop on Biodome
   - bugfix: prevented Lone Operative antag from spawning
   - bugfix: fixed Fatoray Turrets not working properly
+2026-01-31:
+  Swan:
+  - rscadd: adds cream, blueberry juice, succubus milk and incubus draft as selectable
+      breast produce
+  - rscadd: adds a pref for maximum breasts, belly and butt sizes. They can be updated
+      mid round by using the SAD.
+  - qol: changes the mutant colors trait name to body colors
+  - bugfix: fixes max weight pref being capped between 0-100
+  - rscadd: adds memento calori. Based off the memento mori, but centered around fattywank
+      content. One is available in each of the candyland areas.
+  - balance: adipoelectric generators now use more BFI to generate the same amount
+      of power, and the amount of BFI they take ignores WG/L rates.
+  - balance: adipoelectric transformers now turn power into fat about 4 times faster
+  - bugfix: fixes adipoelectric generator not being unwrenchable after being used
+  - bugfix: fixes adipoelectric transformer not being unwrenchable
+  - code_imp: adjust_fatness now properly reports on weight changed when the change
+      would bring the fatness value to 0
+  - refactor: refactors adipoelectric machines code. They should now have a more reliable
+      behavior and be easier to bugfix, at least a bit.
+  - rscadd: lipoplasty surgery now removes BFI
+  - rscadd: the fat sucker machine now removes BFI
+  - rscadd: 'security can now order a special large donut box crate: it''s 10% cheaper
+      (per box) than the one available to everyone, requires sec access to open, and
+      can be ordered from the security cargo console.'
+  - bugfix: Mealdor donuts are finally fixed. It's an end of an era, really
+  - bugfix: fixes munchies weed turning invisible when modified in the DNA manipulator
+  sheepishgoat:
+  - rscadd: re-enables plushies from Skyrat and Bubber
+  - bugfix: updates maps to match with upstream changes. This should lead to less
+      floating cameras and other oddities.
+  - rscdel: (hopefully) removes a few quadraped borg models.
+  smerglemzerb:
+  - balance: buffs points given by negative traits "Weak legs" (from -1 to -4) and
+      "Very weak legs" (from -6 to -7)
+  Clumpy:
+  - image: made the sprite for the memento calori
+  - image: made backfat sprites for the dual tone jumpsuit
+  - image: made permafat hammer sprites
+  - image: made naked belly sprites symmetrical

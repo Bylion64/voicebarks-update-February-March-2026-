@@ -155,7 +155,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 	if (!item_filename)
 		return
 	// BUBBER EDIT CHANGE: Changelog 2: Original: . = SSassets.transport.send_assets(client, item_filename)
-	// . = SSassets.transport.send_assets(client, list(item_filename, "bubber_[item_filename]"))
+	//. = SSassets.transport.send_assets(client, list(item_filename, "bubber_[item_filename]"))
 	. = SSassets.transport.send_assets(client, list(item_filename, "bubber_[item_filename]", "gs13_[item_filename]"))	// GS13 EDIT
 
 /datum/asset/changelog_item/get_url_mappings()

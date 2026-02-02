@@ -47,6 +47,7 @@
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "max_weight"
 	minimum = 0
+	maximum = INFINITY
 
 /datum/preference/numeric/max_weight/create_default_value()
 	return 0

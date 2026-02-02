@@ -2365,10 +2365,6 @@
 /obj/structure/railing/wooden_fencing,
 /turf/open/misc/grass/planet,
 /area/centcom/holding/cafe/park)
-"aCR" = (
-/obj/item/hilbertshotel/ghostdojo,
-/turf/open/indestructible/hotelwood,
-/area/centcom/holding/cafe)
 "aCS" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating/vox,
@@ -5007,7 +5003,7 @@
 /turf/open/water/jungle/biodome,
 /area/centcom/interlink)
 "bCp" = (
-/obj/structure/sign/gatofull_3{
+/obj/effect/decal/gatofull_3{
 	pixel_x = 10;
 	pixel_y = -31
 	},
@@ -5063,7 +5059,7 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
 	},
-/obj/structure/sign/gatofull_2{
+/obj/effect/decal/gatofull_2{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -5242,7 +5238,7 @@
 	dir = 1
 	},
 /obj/structure/rack/shelf,
-/obj/structure/sign/gatofull_3{
+/obj/effect/decal/gatofull_3{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -5777,7 +5773,7 @@
 /area/centcom/holding/cafe/park)
 "cma" = (
 /turf/open/indestructible/hotelwood{
-	icon = 'modular_skyrat/modules/aesthetics/floors/icons/floors.dmi';
+	icon = 'icons/turf/floors.dmi';
 	icon_state = "wood_large"
 	},
 /area/centcom/holding/cafe)
@@ -8273,7 +8269,7 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 1
 	},
-/obj/structure/sign/gatofull_2{
+/obj/effect/decal/gatofull_2{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -8553,7 +8549,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/hotelwood{
-	icon = 'modular_skyrat/modules/aesthetics/floors/icons/floors.dmi';
+	icon = 'icons/turf/floors.dmi';
 	icon_state = "wood_large"
 	},
 /area/centcom/holding/cafe)
@@ -9707,7 +9703,7 @@
 	},
 /obj/machinery/light/small/directional/west,
 /turf/open/indestructible/hotelwood{
-	icon = 'modular_skyrat/modules/aesthetics/floors/icons/floors.dmi';
+	icon = 'icons/turf/floors.dmi';
 	icon_state = "wood_large"
 	},
 /area/centcom/holding/cafe)
@@ -11764,7 +11760,7 @@
 /turf/open/floor/iron/diagonal,
 /area/centcom/holding/cafe/park)
 "kcv" = (
-/obj/structure/sign/gatofull_2{
+/obj/effect/decal/gatofull_2{
 	pixel_x = 10;
 	pixel_y = -31
 	},
@@ -12607,7 +12603,7 @@
 	dir = 6
 	},
 /turf/open/indestructible/hotelwood{
-	icon = 'modular_skyrat/modules/aesthetics/floors/icons/floors.dmi';
+	icon = 'icons/turf/floors.dmi';
 	icon_state = "wood_large"
 	},
 /area/centcom/holding/cafe)
@@ -13428,7 +13424,7 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/light/small/directional/west,
 /turf/open/indestructible/hotelwood{
-	icon = 'modular_skyrat/modules/aesthetics/floors/icons/floors.dmi';
+	icon = 'icons/turf/floors.dmi';
 	icon_state = "wood_large"
 	},
 /area/centcom/holding/cafe)
@@ -14670,7 +14666,7 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 1
 	},
-/obj/structure/sign/gatofull_1{
+/obj/effect/decal/gatofull_1{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -15669,7 +15665,7 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 9
 	},
-/obj/structure/sign/gatofull_1{
+/obj/effect/decal/gatofull_1{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -15974,7 +15970,7 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 1
 	},
-/obj/structure/sign/gatofull_3{
+/obj/effect/decal/gatofull_3{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -17235,7 +17231,7 @@
 	dir = 5
 	},
 /turf/open/indestructible/hotelwood{
-	icon = 'modular_skyrat/modules/aesthetics/floors/icons/floors.dmi';
+	icon = 'icons/turf/floors.dmi';
 	icon_state = "wood_large"
 	},
 /area/centcom/holding/cafe)
@@ -17451,6 +17447,16 @@
 "qyu" = (
 /turf/open/floor/iron/cafeteria,
 /area/centcom/interlink)
+"qyy" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/tile/neutral/opposingcorners{
+	dir = 1
+	},
+/obj/machinery/light/directional/east,
+/turf/open/indestructible/hoteltile{
+	icon_state = "darkfull"
+	},
+/area/centcom/holding/cafe)
 "qze" = (
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 5
@@ -23317,7 +23323,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/interlink)
 "xsr" = (
-/obj/structure/sign/gatofull_1{
+/obj/effect/decal/gatofull_1{
 	pixel_x = 10;
 	pixel_y = -31
 	},
@@ -70674,7 +70680,7 @@ aaa
 aTb
 yeY
 iCw
-bhV
+iCw
 bYl
 iCw
 iCw
@@ -70931,7 +70937,7 @@ aaa
 aTb
 rQp
 iCw
-iCw
+qyy
 xBl
 iCw
 iCw
@@ -72260,7 +72266,7 @@ ajx
 aUo
 aUo
 aUo
-aCR
+aUo
 aqf
 vTT
 pqy

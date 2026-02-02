@@ -533,6 +533,7 @@ export function MainPage(props: MainPageProps) {
     ...data.character_preferences.gs13_examine_prefs,
   };
   // GS13 END EDIT
+
   // BUBBER EDIT ADDITION BEGIN: SWAPPABLE PREF MENUS
   enum PrefPage {
     Visual, // The visual parts
@@ -810,8 +811,9 @@ export function MainPage(props: MainPageProps) {
             <Stack vertical fill>
               <Stack.Item>{BFI_stages}</Stack.Item>
               <Stack.Item>{prefPageContents}</Stack.Item>
+              {/* GS13 END EDIT */}
+              {prefPageContents}
             </Stack>
-            {/* GS13 END EDIT */}
           </Stack>
         </Stack.Item>
         {/* BUBBER EDIT CHANGE END: Swappable pref menus */}

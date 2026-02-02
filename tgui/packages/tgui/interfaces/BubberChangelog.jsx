@@ -125,7 +125,8 @@ const ChangelogList = (props) => {
     combinedDates,
     typeof contents === 'object' ? contents : {},
     typeof bubberContents === 'object' ? bubberContents : {},
-    typeof gs13Contents === 'object' ? gs13Contents : {}, {/* GS13 EDIT */}
+    //GS13 EDIT
+    typeof gs13Contents === 'object' ? gs13Contents : {},
   );
 
   if (Object.keys(combinedDates).length < 1) {
@@ -156,7 +157,6 @@ const ChangelogList = (props) => {
               ))}
             </Section>
           )}
-          {/* GS13 EDIT */}
           {gs13Contents[date] && (
             <Section mt={-1}>
               {Object.entries(gs13Contents[date]).map(([name, changes]) => (
@@ -164,7 +164,6 @@ const ChangelogList = (props) => {
               ))}
             </Section>
           )}
-          {/* GS13 END EDIT */}
         </Box>
       </Section>
     ));
@@ -219,7 +218,7 @@ const BubberChangelogEntry = (props) => {
   );
 };
 
-{/* GS13 EDIT */}
+//GS13 EDIT
 const GS13ChangelogEntry = (props) => {
   const { author, changes } = props;
 
@@ -268,7 +267,7 @@ const GS13ChangelogEntry = (props) => {
     </Stack.Item>
   );
 };
-{/* GS13 END EDIT */}
+//GS13 EDIT - END
 
 const ChangelogEntry = (props) => {
   const { author, changes } = props;
@@ -324,14 +323,16 @@ export const BubberChangelog = (props) => {
   const { dates } = data;
   const [contents, setContents] = useState('');
   const [bubberContents, setBubberContents] = useState('');
-  const [gs13Contents, setGS13Contents] = useState(''); {/* GS13 EDIT */}
+  //GS13 EDIT
+  const [gs13Contents, setGS13Contents] = useState('');
   const [selectedDate, setSelectedDate] = useState(dates[0]);
   const [selectedDateIndex, setSelectedDateIndex] = useState(0);
 
   useEffect(() => {
     setContents('Loading changelog data...');
     setBubberContents('Loading changelog data...');
-    setGS13Contents('Loading changelog data...'); {/* GS13 EDIT */}
+    //GS13 EDIT
+    setGS13Contents('Loading changelog data...');
     getData(selectedDate);
   }, [selectedDate]);
 
@@ -349,24 +350,27 @@ export const BubberChangelog = (props) => {
     Promise.all([
       fetch(resolveAsset(`${date}.yml`)),
       fetch(resolveAsset(`bubber_${date}.yml`)),
-      fetch(resolveAsset(`gs13_${date}.yml`)),  {/* GS13 EDIT */}
+      //GS13 EDIT
+      fetch(resolveAsset(`gs13_${date}.yml`)),
     ]).then(async (links) => {
       const result = await links[0].text();
       const bubberResult = await links[1].text();
-      const gs13Result = await links[2].text(); {/* GS13 EDIT */}
+      //GS13 EDIT
+      const gs13Result = await links[2].text();
 
-      if (links[0].status !== 200 && links[1].status !== 200 && links[2].status !== 200) {  {/* GS13 EDIT */}
+      //GS13 EDIT
+      if (links[0].status !== 200 && links[1].status !== 200 && links[2].status !== 200) {
         const timeout = 50 + attemptNumber * 50;
 
         setContents(`Loading changelog data${'.'.repeat(attemptNumber + 3)}`);
         setBubberContents(
           `Loading changelog data${'.'.repeat(attemptNumber + 3)}`,
         );
-        {/* GS13 EDIT */}
+        //GS13 EDIT
         setGS13Contents(
           `Loading changelog data${'.'.repeat(attemptNumber + 3)}`,
         );
-        {/* GS13 END EDIT */}
+        //GS13 EDIT
         setTimeout(() => {
           getData(date, attemptNumber + 1);
         }, timeout);
@@ -379,30 +383,27 @@ export const BubberChangelog = (props) => {
             yaml.load(bubberResult, { schema: yaml.CORE_SCHEMA }),
           );
         }
-        {/* GS13 EDIT */}
+        //GS13 EDIT
         if (links[2].status === 200) {
           setGS13Contents(
             yaml.load(gs13Result, { schema: yaml.CORE_SCHEMA }),
           );
         }
-        {/* GS13 END EDIT */}
       }
     });
   }
 
   const header = (
+    //GS13 EDIT
     <Section>
-      <h1>Gain Station 13</h1> {/* GS13 EDIT */}
+      <h1>Gain Station 13</h1>
       <p>
         <b>Thanks to: </b>
-        {/* GS13 EDIT */}
         Bubberstation, /tg/station 13, Effigy, Stellar Haven, Baystation 12, /vg/station,
         NTstation, CDK Station devs, FacepunchStation, GoonStation devs, the
         original Space Station 13 developers, and the countless others who have
         contributed to the game.
-        {/* GS13 END EDIT */}
       </p>
-      {/* GS13 EDIT */}
       <p>
         {'Our GitHub repository is available '}
         <a href="https://github.com/sheepishgoat/GS13-Blubberstation">here</a>
@@ -426,7 +427,7 @@ export const BubberChangelog = (props) => {
         <a href="https://discord.com/invite/AvjrTqnqEx">here</a>!
       </p>
       */}
-      {/* GS13 END EDIT */}
+
       <DateDropdown
         dates={dates}
         selectedDate={selectedDate}
@@ -564,7 +565,7 @@ export const BubberChangelog = (props) => {
     <Window title="Changelog" width={730} height={700}>
       <Window.Content scrollable>
         {header}
-        <ChangelogList contents={contents} bubberContents={bubberContents} gs13Contents = {gs13Contents}/> {/* GS13 EDIT */}
+        <ChangelogList contents={contents} bubberContents={bubberContents} gs13Contents = {gs13Contents}/>
         {footer}
       </Window.Content>
     </Window>

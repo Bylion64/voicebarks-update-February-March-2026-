@@ -22,7 +22,7 @@
 				continue
 
 			var/possible_fatty_score = possible_fatty.nutrition
-			/*
+			/* GS13 EDIT, remove overweight quirk
 			if(possible_fatty.has_quirk(/datum/quirk/overweight))
 				possible_fatty_score = possible_fatty_score * 1.5 + 1000
 			*/

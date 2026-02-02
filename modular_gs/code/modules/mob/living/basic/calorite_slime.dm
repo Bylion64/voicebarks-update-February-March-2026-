@@ -203,7 +203,7 @@
 				to_chat(owner, span_userdanger(pick(pain_lines)))
 
 		our_slime.adjust_nutrition(1.8 * damage)
-		our_slime.adjustBruteLoss(-1.5 * seconds_between_ticks)
+		our_slime.adjust_brute_loss(-1.5 * seconds_between_ticks)
 		return
 
 	. = ..()
@@ -270,7 +270,6 @@
 	icon = 'modular_gs/icons/mob/slimes.dmi'
 	icon_state = "calorite-core"
 	//crossbreed_modification = "symbiont" - Let's not do crossbred cores JUST yet
-	activate_reagents = list(/datum/reagent/toxin/plasma)
 
 /obj/item/slime_extract/calorite/activate(mob/living/carbon/human/user, datum/species/jelly/luminescent/species, activation_type)
 	switch(activation_type)

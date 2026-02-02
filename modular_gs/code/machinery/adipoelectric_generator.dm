@@ -1,3 +1,8 @@
+#define KILO_WATT *1000
+#define MEGA_WATT *1000000
+/// base amount of power in Watts gained from one BFI
+#define WATTS_PER_BFI 10 KILO_WATT
+
 /obj/machinery/power/adipoelectric_generator
 	name = "adipoelectric generator"
 	desc = "This device uses calorite technology to transform excess blubber into power!"
@@ -9,10 +14,10 @@
 	state_open = TRUE
 	circuit = /obj/item/circuitboard/machine/power/adipoelectric_generator
 	occupant_typecache = list(/mob/living/carbon)
-	var/laser_modifier
-	var/max_fat
-	var/obj/structure/cable/attached
-	var/conversion_rate = 10000
+	/// multiplier to power gained from BFI
+	var/laser_modifier = 0
+	/// maximum BFI we can take per second
+	var/max_fat = 0
 	var/emp_timer = 0
 	var/active = FALSE
 
@@ -29,17 +34,24 @@
 	for(var/datum/stock_part/micro_laser/laser in component_parts)
 		laser_modifier += laser.tier
 	for(var/datum/stock_part/matter_bin/matter_bin in component_parts)
-		max_fat += matter_bin.tier * 2
+		max_fat += matter_bin.tier * 5
 
-/obj/machinery/power/adipoelectric_generator/process()
-	if(!occupant)
-		src.visible_message("<span class='alert'>The [src] buzzes. It needs someone inside.</span>")
+/obj/machinery/power/adipoelectric_generator/process(seconds_per_tick)
+	if(!is_operational)
+		return
+
+	var/mob/living/carbon/carbon = occupant
+
+	if(isnull(carbon) || !istype(carbon))
+		visible_message(span_alert("The [src] buzzes. It needs someone standing on it to work."))
 		playsound(src, 'sound/machines/buzz/buzz-two.ogg', 50)
+		active = FALSE
 		return PROCESS_KILL
-	if(occupant:fatness_real > 0 && powernet && anchored && (emp_timer < world.time))
+
+	if(carbon.fatness_real > 0 && powernet && anchored && (emp_timer < world.time))
 		active = TRUE
-		add_avail(conversion_rate * laser_modifier * max_fat)
-		occupant:adjust_fatness(-max_fat, FATTENING_TYPE_ITEM)
+		var/fat_burned = abs(carbon.adjust_fatness(-(max_fat * seconds_per_tick), FATTENING_TYPE_ITEM, TRUE))
+		add_avail(WATTS_PER_BFI * laser_modifier * fat_burned)
 	else
 		active = FALSE
 	update_icon()
@@ -57,31 +69,26 @@
 			src.visible_message("<span class='alert'>The [src] buzzes and expels anyone inside!.</span>")
 			open_machine()
 
-/obj/machinery/power/adipoelectric_generator/attackby(obj/item/P, mob/user, params)
-	if(state_open)
-		if(default_deconstruction_screwdriver(user, "state_open", "state_off", P))
-			return
-
-	if(default_pry_open(P))
-		return
-
-	if(default_deconstruction_crowbar(P))
-		return
-
-	if(P.tool_behaviour == TOOL_WRENCH && !active)
-		if(!anchored && !isinspace())
-			connect_to_network()
-			to_chat(user, "<span class='notice'>You secure the generator to the floor.</span>")
-			anchored = TRUE
-			dir = SOUTH
-		else if(anchored)
-			disconnect_from_network()
-			to_chat(user, "<span class='notice'>You unsecure the generator from the floor.</span>")
-			anchored = FALSE
-		playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
-		return
+/obj/machinery/power/adipoelectric_generator/can_be_unfasten_wrench(mob/user, silent)
+	if(!state_open)
+		to_chat(user, span_warning("Turn \the [src] off first!"))
+		return FAILED_UNFASTEN
 
 	return ..()
+
+/obj/machinery/power/adipoelectric_generator/wrench_act(mob/living/user, obj/item/tool)
+	default_unfasten_wrench(user, tool)
+	return ITEM_INTERACT_SUCCESS
+
+/obj/machinery/power/adipoelectric_generator/crowbar_act(mob/living/user, obj/item/tool)
+	default_deconstruction_crowbar(tool)
+	return ITEM_INTERACT_SUCCESS
+
+/obj/machinery/power/adipoelectric_generator/screwdriver_act(mob/living/user, obj/item/item)
+	if(!state_open)
+		return ITEM_INTERACT_BLOCKING
+	default_deconstruction_screwdriver(user, "state_open", "state_off", item)
+	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/power/adipoelectric_generator/interact(mob/user)
 	toggle_open()
@@ -96,6 +103,7 @@
 
 /obj/machinery/power/adipoelectric_generator/open_machine(drop = TRUE, density_to_set = FALSE)
 	. = ..()
+	active = FALSE
 	STOP_PROCESSING(SSobj, src)
 
 /obj/machinery/power/adipoelectric_generator/close_machine(atom/movable/target, density_to_set = TRUE)
@@ -142,13 +150,10 @@
 	..()
 	update_icon()
 
-/obj/machinery/power/adipoelectric_generator/Destroy()
-	. = ..()
-
 /obj/machinery/power/adipoelectric_generator/examine(mob/user)
 	. = ..()
 	if(is_operational)
-		. += "<span class='notice'>[src]'s show it can produce <b>[conversion_rate * laser_modifier]W</b> per adipose unit, taking in <b>[max_fat]</b> max each time.</span>"
+		. += "<span class='notice'>[src]'s show it can produce <b>[WATTS_PER_BFI * laser_modifier]W</b> per adipose unit, taking in <b>[max_fat]</b> max each second.</span>"
 	else
 		. += "<span class='notice'><b>[src]'s display is currently offline.</b></span>"
 
@@ -170,3 +175,7 @@
 		RND_CATEGORY_MACHINE + RND_SUBCATEGORY_MACHINE_ENGINEERING
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
+
+#undef KILO_WATT
+#undef MEGA_WATT
+#undef WATTS_PER_BFI

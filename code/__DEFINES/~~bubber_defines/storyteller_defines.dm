@@ -25,6 +25,8 @@
 #define TAG_SPACE "space"
 /// When the event requires the station to be on planetary.
 #define TAG_PLANETARY "planetary"
+/// When the event is used for re-rolling antagonists
+#define TAG_ANTAG_REROLL "antag_reroll"
 
 
 #define EVENT_TRACK_MUNDANE "Mundane"
@@ -96,4 +98,4 @@
 #define STORYTELLER_TYPE_ALWAYS_AVAILABLE 0
 #define STORYTELLER_TYPE_CALM 1
 #define STORYTELLER_TYPE_INTENSE 2
-#define STORYTELLER_TYPE_GS 3 //gainstation debug type
+#define STORYTELLER_TYPE_GS 3 //GS13 EDIT - Debug Storyteller type

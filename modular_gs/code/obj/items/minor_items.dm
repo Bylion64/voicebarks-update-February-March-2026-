@@ -279,7 +279,7 @@
 	desc = "Some madman managed to create a weapon out of calorite... Luckily, it has a rubber handle for you to wield."
 	name = "Calorite Hammer"
 	icon = 'modular_gs/icons/obj/weapons/calorite_hammer.dmi'
-	icon_state = "hammer"
+	icon_state = "calorite_hammer"
 	damtype = FAT
 	throwforce = 40
 	force = 60
@@ -288,7 +288,7 @@
 	desc = "Destroyer of waistlines."
 	name = "Permafat Hammer"
 	icon = 'modular_gs/icons/obj/weapons/calorite_hammer.dmi'
-	icon_state = "hammer"
+	icon_state = "permafat_hammer"
 	damtype = PERMA_FAT
 	throwforce = 10
 	force = 20

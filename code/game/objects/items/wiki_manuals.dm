@@ -83,7 +83,6 @@
 		</html>"}
 
 //GS13 EDIT END
-
 //BUBBER EDIT ADDITION BEGIN: READING SPACE LAW HAS A CHANCE TO TEACH YOU LEGALESE
 /obj/item/book/manual/wiki/security_space_law/attack_self(mob/user)
 	if(user.can_read(src) && prob(30))
@@ -218,7 +217,7 @@
 			part.adjustBleedStacks(5)
 		H.gib_animation()
 		sleep(0.3 SECONDS)
-		H.adjustBruteLoss(1000) //to make the body super-bloody
+		H.adjust_brute_loss(1000) //to make the body super-bloody
 		// if we use gib() then the body gets deleted
 		H.spawn_gibs()
 		H.spill_organs(DROP_ALL_REMAINS)

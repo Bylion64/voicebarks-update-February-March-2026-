@@ -13,6 +13,7 @@
 	glass_type = /obj/item/stack/sheet/calorite_glass
 	rad_insulation = RAD_MEDIUM_INSULATION
 	glass_material_datum = /datum/material/alloy/calorite_glass
+	custom_materials = list(/datum/material/calorite = SHEET_MATERIAL_AMOUNT, /datum/material/glass = HALF_SHEET_MATERIAL_AMOUNT)
 
 /obj/structure/window/calorite/Initialize(mapload, direct)
 	// fattening amount half that of a calorite wall - because you can push it,
@@ -58,6 +59,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/calorite/unanchored/spawner, 0
 	smoothing_groups = SMOOTH_GROUP_WINDOW_FULLTILE
 	glass_amount = 2
 	max_integrity = 60
+	custom_materials = list(/datum/material/calorite = 2 * SHEET_MATERIAL_AMOUNT, /datum/material/glass = SHEET_MATERIAL_AMOUNT)
 
 /obj/structure/window/calorite/fulltile/unanchored
 	anchored = FALSE
