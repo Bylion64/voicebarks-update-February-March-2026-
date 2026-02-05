@@ -413,7 +413,8 @@ Behavior that's still missing from this component that original food items had t
 
 		//GS13 EDIT- Bluespace collar addition
 		if (istype(bs_collar_trans, /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter) && bs_collar_trans.islinked())
-			eater.visible_message("<span class='notice'>[eater] effortlessly [eatverb]s \the [parent].</span>", "<span class='notice'>You effortlessly [eatverb] \the [parent], feeling as if you haven't eaten anything at all.</span>")
+			message_to_consumer = span_notice("You effortlessly [eatverb] \the [parent], feeling as if you haven't eaten anything at all.")
+			message_to_nearby_audience = span_notice("[eater] effortlessly [eatverb]s \the [parent].")
 		//GS13 END EDIT
 		else if(junkiness && eater.satiety < -150 && eater.nutrition > NUTRITION_LEVEL_STARVING + 50 && !HAS_TRAIT(eater, TRAIT_VORACIOUS) && !HAS_TRAIT(eater, TRAIT_GLUTTON)) //GS13 EDIT - Bluespace collar added else
 			to_chat(eater, span_warning("You don't feel like eating any more junk food at the moment!"))

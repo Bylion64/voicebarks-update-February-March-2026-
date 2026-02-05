@@ -69,6 +69,13 @@
 	if(!canconsume(target_mob, user))
 		return ITEM_INTERACT_BLOCKING
 
+	//GS13 EDIT - Bluespace collar addition and interception
+	var/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/bs_collar_trans = 0
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/human_eater = user
+		bs_collar_trans = human_eater.wear_neck
+	//GS13 END EDIT
+
 	if(target_mob != user)
 		target_mob.visible_message(
 			span_danger("[user] attempts to feed [target_mob] something from [src]."),
@@ -84,27 +91,35 @@
 		)
 		log_combat(user, target_mob, "fed", reagents.get_reagent_log_string())
 	else
-		to_chat(user, span_notice("You swallow a gulp of [src]."))
+		//GS13 EDIT - Bluespace collar addition and interception
+		if (istype(bs_collar_trans, /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter) && bs_collar_trans.islinked())
+			to_chat(user, span_notice("You effortlessly swallow a gulp of [src]. It feels like you haven't drank anything at all."))
+		else
+			to_chat(user, span_notice("You swallow a gulp of [src]."))
+		//GS13 END EDIT
 
 	. = ITEM_INTERACT_SUCCESS
 	SEND_SIGNAL(src, COMSIG_GLASS_DRANK, target_mob, user)
 	SEND_SIGNAL(target_mob, COMSIG_GLASS_DRANK, src, user) // SKYRAT EDIT ADDITION - Hemophages can't casually drink what's not going to regenerate their blood
 	var/fraction = min(gulp_size/reagents.total_volume, 1)
-	reagents.trans_to(target_mob, gulp_size, transferred_by = user, methods = reagent_consumption_method)
-	checkLiked(fraction, target_mob)
-	playsound(target_mob.loc, consumption_sound, rand(10,50), TRUE)
-	if(!iscarbon(target_mob))
-		return .
-	var/mob/living/carbon/carbon_drinker = target_mob
-	var/list/diseases = carbon_drinker.get_static_viruses()
-	if(!LAZYLEN(diseases))
-		return .
-	var/list/datum/disease/diseases_to_add = list()
-	for(var/datum/disease/malady as anything in diseases)
-		if(malady.spread_flags & DISEASE_SPREAD_CONTACT_FLUIDS)
-			diseases_to_add += malady
-	if(LAZYLEN(diseases_to_add))
-		AddComponent(/datum/component/infective, diseases_to_add)
+	//GS13 EDIT - Bluespace collar addition and interception
+	if (!(istype(bs_collar_trans, /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter) && bs_collar_trans.transpose_container(src, target_mob, user)))
+		reagents.trans_to(target_mob, gulp_size, transferred_by = user, methods = reagent_consumption_method)
+		checkLiked(fraction, target_mob)
+		playsound(target_mob.loc, consumption_sound, rand(10,50), TRUE)
+		if(!iscarbon(target_mob))
+			return .
+		var/mob/living/carbon/carbon_drinker = target_mob
+		var/list/diseases = carbon_drinker.get_static_viruses()
+		if(!LAZYLEN(diseases))
+			return .
+		var/list/datum/disease/diseases_to_add = list()
+		for(var/datum/disease/malady as anything in diseases)
+			if(malady.spread_flags & DISEASE_SPREAD_CONTACT_FLUIDS)
+				diseases_to_add += malady
+		if(LAZYLEN(diseases_to_add))
+			AddComponent(/datum/component/infective, diseases_to_add)
+	//GS13 END EDIT
 	return .
 
 /obj/item/reagent_containers/cup/interact_with_atom(atom/target, mob/living/user, list/modifiers)

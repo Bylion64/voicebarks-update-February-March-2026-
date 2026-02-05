@@ -1,3 +1,7 @@
+GLOBAL_LIST_INIT(stomach_expanding_sounds, list(
+	'modular_gs/sound/voice/gurgle1.ogg', 'modular_gs/sound/voice/gurgle2.ogg', 'modular_gs/sound/voice/gurgle3.ogg'
+))
+
 /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_receiver
 	name = "Bluespace collar receiver"
 	desc = "A collar containing a miniaturized bluespace whitehole. Other bluespace transmitter collars can connect to this, causing the wearer to receive food from other transmitter collars directly into the stomach. "
@@ -116,7 +120,9 @@
 		return FALSE
 	if(eater.satiety > -200)
 		eater.satiety -= foodstuff.junkiness
-	playsound(eater.loc,'sound/items/eatfood.ogg', rand(10,50), TRUE)
+	playsound(eater.loc, pick(GLOB.stomach_expanding_sounds), rand(10,50), 1)
+	playsound(original_eater.loc,'sound/items/eatfood.ogg', rand(10,50), 1)
+	eater.visible_message("<span class='warning'>[eater]'s belly seems to visibly distend a bit further'!</span>", "<span class='danger'>You feel your stomach get filled by something!</span>")
 	if(!owner.reagents.total_volume)
 		return
 	var/sig_return = SEND_SIGNAL(foodstuff.parent, COMSIG_FOOD_EATEN, eater, feeder, foodstuff.bitecount, foodstuff.bite_consumption)
@@ -154,8 +160,29 @@
 	return TRUE
 
 // For containers
-/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_container(datum/reagents/reagents , fraction, mob/M, mob/user)
-	return FALSE
+/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_container(obj/item/reagent_containers/cup/origin, mob/living/original_target, mob/living/user)
+
+	var/mob/living/target_mob = linked_receiver.victim
+
+	var/fraction = min(origin.gulp_size/origin.reagents.total_volume, 1)
+	origin.reagents.trans_to(target_mob, origin.gulp_size, transferred_by = user, methods = origin.reagent_consumption_method)
+	origin.checkLiked(fraction, target_mob)
+	playsound(original_target.loc, origin.consumption_sound, rand(10,50), TRUE)
+	playsound(target_mob.loc, pick(GLOB.stomach_expanding_sounds), rand(10,50), TRUE)
+	if(!iscarbon(target_mob))
+		return .
+	var/mob/living/carbon/carbon_drinker = target_mob
+	var/list/diseases = carbon_drinker.get_static_viruses()
+	if(!LAZYLEN(diseases))
+		return TRUE
+	var/list/datum/disease/diseases_to_add = list()
+	for(var/datum/disease/malady as anything in diseases)
+		if(malady.spread_flags & DISEASE_SPREAD_CONTACT_FLUIDS)
+			diseases_to_add += malady
+	if(LAZYLEN(diseases_to_add))
+		origin.AddComponent(/datum/component/infective, diseases_to_add)
+
+	return TRUE
 
 
 // For industrial feeding tube
