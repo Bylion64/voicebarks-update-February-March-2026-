@@ -396,18 +396,26 @@ Behavior that's still missing from this component that original food items had t
 		// else
 		// 	time_to_eat *= (fullness / NUTRITION_LEVEL_FAT) * EAT_TIME_VORACIOUS_FULL_MULT // takes longer to eat the more well fed you are
 		// GS13 END EDIT
+
+	// GS13 EDIT
+	var/mob/living/carbon/human/human_eater = eater // human eater, not human eater.
+	var/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/bs_collar_trans = human_eater.wear_neck
+	// GS13 END EDIT
 	if(eater == feeder)//If you're eating it yourself.
 		if(eat_time > 0 && !do_after(feeder, time_to_eat, eater, timed_action_flags = food_flags & FOOD_FINGER_FOOD ? IGNORE_USER_LOC_CHANGE | IGNORE_TARGET_LOC_CHANGE : NONE)) //Gotta pass the minimal eat time
 			return
 		if(IsFoodGone(owner, feeder))
 			return
 		var/eatverb = pick(eatverbs)
-
 		var/message_to_nearby_audience = ""
 		var/message_to_consumer = ""
 		var/message_to_blind_consumer = ""
 
-		if(junkiness && eater.satiety < -150 && eater.nutrition > NUTRITION_LEVEL_STARVING + 50 && !HAS_TRAIT(eater, TRAIT_VORACIOUS) && !HAS_TRAIT(eater, TRAIT_GLUTTON))
+		//GS13 EDIT- Bluespace collar addition
+		if (istype(bs_collar_trans, /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter) && bs_collar_trans.islinked())
+			eater.visible_message("<span class='notice'>[eater] effortlessly [eatverb]s \the [parent].</span>", "<span class='notice'>You effortlessly [eatverb] \the [parent], feeling as if you haven't eaten anything at all.</span>")
+		//GS13 END EDIT
+		else if(junkiness && eater.satiety < -150 && eater.nutrition > NUTRITION_LEVEL_STARVING + 50 && !HAS_TRAIT(eater, TRAIT_VORACIOUS) && !HAS_TRAIT(eater, TRAIT_GLUTTON)) //GS13 EDIT - Bluespace collar added else
 			to_chat(eater, span_warning("You don't feel like eating any more junk food at the moment!"))
 			return
 		else if(fullness > (1800 * (1 + eater.overeatduration / (4000 SECONDS)))) // The more you eat - the more you can eat //GS13 EDIT EAT MORE
@@ -475,7 +483,8 @@ Behavior that's still missing from this component that original food items had t
 		if(eater.is_blind())
 			to_chat(eater, span_userdanger("You're forced to eat something!"))
 
-	TakeBite(eater, feeder)
+	if (!(istype(bs_collar_trans, /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter) && bs_collar_trans.transpose_edible(src, eater, feeder))) //GS13 EDIT - Bluespace collar
+		TakeBite(eater, feeder)
 
 	//If we're not force-feeding and there's an eat delay, try take another bite
 	if(eat_time > 0)	// GS13 edit - makes it so feeding others can be queued
