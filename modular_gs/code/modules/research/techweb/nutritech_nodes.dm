@@ -9,7 +9,7 @@
 	description = "Ending world hunger was never made easier!"
 	prereq_ids = list(TECHWEB_NODE_MEDBAY_EQUIP, TECHWEB_NODE_EXP_TOOLS)
 	design_ids = list(
-		// "calorite_collar",
+		"calorite_collar",
 		// "ci-nutrimentturbo",
 		"bluespace_belt",
 		"adipoelectric_transformer",
@@ -18,8 +18,8 @@
 		"borg_upgrade_cookiesynthesizer",
 		// "borg_upgrade_feedingtube",
 		// "ci-fatmobility",
-		// "bluespace_collar_receiver",
-		// "bluespace_collar_transmitter"
+		"bluespace_collar_receiver",
+		"bluespace_collar_transmitter"
 		)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	required_items_to_unlock = list(

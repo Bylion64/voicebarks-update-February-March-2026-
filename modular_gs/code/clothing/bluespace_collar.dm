@@ -103,11 +103,11 @@ GLOBAL_LIST_INIT(stomach_expanding_sounds, list(
 		context[SCREENTIP_CONTEXT_LMB] = "Link to receiver"
 		return CONTEXTUAL_SCREENTIP_SET
 
-// For food
-/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_food(/obj/item/food/owner, mob/living/original_eater, mob/living/feeder)
-	return FALSE
+/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/examine(mob/user)
+	. = ..()
+	. += "It seems to be [linked_receiver ? "linked" : "unlinked"]."
 
-// For the alternative edible functionality
+// For the edible functionality
 /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_edible(datum/component/edible/foodstuff, mob/living/original_eater, mob/living/feeder)
 	if (!islinked())
 		return FALSE
@@ -161,6 +161,8 @@ GLOBAL_LIST_INIT(stomach_expanding_sounds, list(
 
 // For containers
 /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_container(obj/item/reagent_containers/cup/origin, mob/living/original_target, mob/living/user)
+	if (!islinked())
+		return FALSE
 
 	var/mob/living/target_mob = linked_receiver.victim
 
@@ -201,11 +203,23 @@ GLOBAL_LIST_INIT(stomach_expanding_sounds, list(
 */
 
 // For feeding tube
-/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_feeding(transfer_amount, obj/item/reagent_containers/beaker, mob/living/original_eater)
-	return FALSE
+/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/proc/transpose_feeding(mob/living/carbon/human/og_eater, datum/reagents/drip_reagents, amount)
+	if (!islinked())
+		return FALSE
+	var/mob/living/carbon/human/eater = linked_receiver.victim
 
-/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/attack_self_secondary(mob/user, modifiers)
+	var/obj/item/organ/stomach/target_stomach = eater?.get_organ_slot(ORGAN_SLOT_STOMACH)
+	if(!istype(target_stomach))
+		return FALSE
+	drip_reagents.trans_to(target_stomach.reagents, amount, show_message = FALSE) //make reagents reacts, but don't spam messages
+	if(prob(10))
+		og_eater.visible_message("<span class='warning'>[eater] seems unfazed by the liquid being pumped into them.</span>", "<span class='danger'>You feel no discomfort at all as you're pumped full of liquids.</span>")
+		eater.visible_message("<span class='warning'>[eater]'s belly seems to visibly distend, emitting an audible sloshing noise!</span>", "<span class='danger'>You feel your stomach get pumped full with liquid, hearing sloshing noises coming from within!</span>")
+		playsound(eater.loc, 'modular_gs/sound/effects/inflation/liquid_slosh.ogg', rand(10,50), TRUE)
+	return TRUE
+
+/obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter/attack_self_secondary(mob/muser, modifiers)
 	linked_receiver = 0
-	var/mob/living/carbon/U = user
-	to_chat(U, "<span class='notice'>You remove the currently linked receiver collar from the buffer</span>")
+	var/mob/living/carbon/user = muser
+	to_chat(user, "<span class='notice'>You remove the currently linked receiver collar from the buffer</span>")
 	. = ..()

@@ -45,7 +45,6 @@
 	category = list(RND_CATEGORY_WEAPONS)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SECURITY
 
-/*
 //nutritech tools
 /datum/design/calorite_collar
 	name = "Calorite Collar"
@@ -54,9 +53,9 @@
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT *0.5, /datum/material/calorite = SHEET_MATERIAL_AMOUNT * 2)
 	construction_time = 75
-	build_path = /obj/item/clothing/neck/petcollar/calorite
+	build_path = /obj/item/clothing/neck/human_petcollar/calorite
 	category = list(RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_MEDICAL)
-	departmental_flags = DEPARTMENT_BITFLAG_ALL
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SECURITY | DEPARTMENT_BITFLAG_SERVICE | DEPARTMENT_BITFLAG_ENGINEERING
 
 /datum/design/bluespace_collar_receiver
 	name = "Bluespace collar receiver"
@@ -65,9 +64,9 @@
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT *0.5, /datum/material/calorite = SHEET_MATERIAL_AMOUNT *1.25, /datum/material/bluespace = SHEET_MATERIAL_AMOUNT * 0.125)
 	construction_time = 75
-	build_path = /obj/item/clothing/neck/petcollar/locked/bluespace_collar_receiver
+	build_path = /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_receiver
 	category = list(RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_MEDICAL)
-	departmental_flags = DEPARTMENT_BITFLAG_ALL
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SECURITY | DEPARTMENT_BITFLAG_SERVICE | DEPARTMENT_BITFLAG_ENGINEERING
 
 /datum/design/bluespace_collar_transmitter
 	name = "Bluespace collar transmitter"
@@ -76,9 +75,11 @@
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT *0.5, /datum/material/calorite = SHEET_MATERIAL_AMOUNT *0.5, /datum/material/bluespace = SHEET_MATERIAL_AMOUNT *0.25)
 	construction_time = 75
-	build_path = /obj/item/clothing/neck/petcollar/locked/bluespace_collar_transmitter
+	build_path = /obj/item/clothing/neck/human_petcollar/locked/bluespace_collar_transmitter
 	category = list(RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_MEDICAL)
-	departmental_flags = DEPARTMENT_BITFLAG_ALL
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SECURITY | DEPARTMENT_BITFLAG_SERVICE | DEPARTMENT_BITFLAG_ENGINEERING
+
+/*
 
 /datum/design/cyberimp_nutriment_turbo
 	name = "Nutriment Pump Implant TURBO"
