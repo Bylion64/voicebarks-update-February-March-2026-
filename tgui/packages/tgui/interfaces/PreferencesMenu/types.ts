@@ -207,6 +207,7 @@ export type PreferencesMenuData = {
 
     // GS13 EDIT
     wg_prefs: Record<string, unknown>;
+    helplessness_prefs: Record<string, unknown>;
     gs13_examine_prefs: Record<string, unknown>;
     // GS13 END EDIT
 

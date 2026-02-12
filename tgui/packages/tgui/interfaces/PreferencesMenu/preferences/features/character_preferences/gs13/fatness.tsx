@@ -27,7 +27,7 @@ export const weight_loss_rate: FeatureNumeric = {
 export const max_weight: Feature<number> = {
   name: 'Maximum Weight',
   description:
-    'What is the maximum weight we want our character to be at? 0 means there will be no weight cap.',
+    'What is the maximum weight your character can reach? 0 means there will be no weight cap.',
   component: FeatureNumberInput,
 };
 
