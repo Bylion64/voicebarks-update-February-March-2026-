@@ -1,14 +1,13 @@
 
-/datum/loadout_item/neck/gatobadge_employee //these are available only to players who are CC employees (CC itself, not just GATO)
+/datum/loadout_item/accessory/medal/gatobadge_employee //these are available only to players who are CC employees (CC itself, not just GATO)
 	name = "GATO Badge - Employee"
 	item_path = /obj/item/clothing/accessory/medal/gato_badge/employee
 	ckeywhitelist = list(
 						"sonoida",
 						"gamerguy14948",
-						""
 						)
 
-/datum/loadout_item/neck/gatobadge_middleman //these are available to players who were granted permission to have their characters be tied to CC
+/datum/loadout_item/accessory/medal/gatobadge_middleman //these are available to players who were granted permission to have their characters be tied to CC
 	name = "GATO Badge - Correspondent"
 	item_path = /obj/item/clothing/accessory/medal/gato_badge/middleman
 	ckeywhitelist = list(
@@ -16,11 +15,12 @@
 						"sonoida",
 						)
 
-/datum/loadout_item/neck/contributor_badge //badge for contributors - spriters, mods, admins and anyone helping out
+/datum/loadout_item/accessory/medal/contributor_badge //badge for contributors - spriters, mods, admins and anyone helping out
 	name = "Contributor Badge"
 	item_path = /obj/item/clothing/accessory/medal/gato_badge/contributor
 	ckeywhitelist = list(
 						"sonoida",
+						"absolutelyfree",
 						"thecreepydolphin",
 						"almaniak",
 						"furbuster555",
@@ -44,7 +44,7 @@
 						"killmewitha22",
 						)
 
-/datum/loadout_item/neck/coder_badge //badge for coders who worked on the codebase at least a few times
+/datum/loadout_item/accessory/medal/coder_badge //badge for coders who worked on the codebase at least a few times
 	name = "Coder Badge"
 	item_path = /obj/item/clothing/accessory/medal/gato_badge/coder
 	ckeywhitelist = list(
@@ -58,7 +58,6 @@
 						"sapphroqueer",
 						"croccodoggo",
 						"psq95",
-						"absolutely_free",
 						"reoiteavali",
 						)
 
