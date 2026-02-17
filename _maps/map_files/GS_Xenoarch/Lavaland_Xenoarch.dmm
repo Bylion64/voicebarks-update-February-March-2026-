@@ -7779,7 +7779,6 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/machinery/xenoarch/recoverer,
 /turf/open/floor/iron/white/smooth_large,
 /area/xenoarch/lavaland/arch)
 "fNh" = (
@@ -19621,6 +19620,7 @@
 "ojj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/table,
+/obj/machinery/xenoarch/recoverer,
 /turf/open/floor/iron/white/smooth_large,
 /area/xenoarch/lavaland/arch)
 "ojv" = (
@@ -20298,7 +20298,7 @@
 "oIC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/table,
-/obj/machinery/xenoarch/digger,
+/obj/machinery/xenoarch/researcher,
 /turf/open/floor/iron/white/smooth_large,
 /area/xenoarch/lavaland/arch)
 "oIO" = (
@@ -23784,6 +23784,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/diagonal,
 /area/lavaland/underground/xenoarch/calorite_temple)
+"rpf" = (
+/turf/closed/mineral/calorite/volcanic,
+/area/lavaland/underground)
 "rpi" = (
 /obj/structure/chair/sofa/left/brown{
 	dir = 8
@@ -23988,7 +23991,6 @@
 	dir = 1
 	},
 /obj/structure/table,
-/obj/machinery/xenoarch/researcher,
 /turf/open/floor/iron/white/smooth_large,
 /area/xenoarch/lavaland/arch)
 "rwm" = (
@@ -32434,6 +32436,9 @@
 /obj/machinery/camera/directional/north,
 /turf/open/floor/iron/dark/smooth_large,
 /area/xenoarch/lavaland/gym)
+"xzO" = (
+/turf/closed/mineral/strange_rock/volcanic,
+/area/lavaland/underground)
 "xzQ" = (
 /obj/machinery/libraryscanner,
 /obj/structure/table/wood,
@@ -112874,7 +112879,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 vde
@@ -114685,7 +114690,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 kHZ
@@ -114970,7 +114975,7 @@ kHZ
 kHZ
 xoW
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -115986,7 +115991,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 kHZ
@@ -116486,7 +116491,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -116524,7 +116529,7 @@ nEf
 nEf
 kHZ
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -117030,7 +117035,7 @@ kHZ
 kHZ
 nEf
 nEf
-nEf
+xzO
 nEf
 kHZ
 kHZ
@@ -117528,7 +117533,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -117793,7 +117798,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -118061,7 +118066,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 kHZ
@@ -118585,7 +118590,7 @@ kHZ
 kHZ
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -120125,7 +120130,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 msl
@@ -120134,7 +120139,7 @@ kHZ
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -121939,7 +121944,7 @@ kHZ
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -122190,7 +122195,7 @@ msl
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 xoW
 kHZ
@@ -124001,7 +124006,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+xzO
 nEf
 nEf
 nEf
@@ -133674,7 +133679,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -135479,7 +135484,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 kHZ
@@ -135497,7 +135502,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -135732,7 +135737,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -135746,7 +135751,7 @@ kHZ
 kHZ
 kHZ
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -136243,7 +136248,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -136525,7 +136530,7 @@ kHZ
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -136534,7 +136539,7 @@ kHZ
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -141920,7 +141925,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -141952,7 +141957,7 @@ kHZ
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -142465,7 +142470,7 @@ kHZ
 kHZ
 kHZ
 kHZ
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -143239,7 +143244,7 @@ kHZ
 kHZ
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -143258,7 +143263,7 @@ kHZ
 kHZ
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -143472,7 +143477,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 kHZ
@@ -143741,7 +143746,7 @@ kHZ
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -143752,7 +143757,7 @@ kHZ
 kHZ
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -144260,12 +144265,12 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 kHZ
 kHZ
 kHZ
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -144766,7 +144771,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 msl
 kHZ
 nEf
@@ -145294,7 +145299,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 kHZ
 nEf
@@ -145314,7 +145319,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 kHZ
@@ -145797,7 +145802,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 kHZ
 xoW
@@ -145850,7 +145855,7 @@ nEf
 nEf
 kHZ
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -146064,6 +146069,27 @@ nEf
 nEf
 nEf
 nEf
+rpf
+nEf
+nEf
+nEf
+nEf
+nEf
+kHZ
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
+nEf
 nEf
 nEf
 nEf
@@ -146071,32 +146097,11 @@ nEf
 nEf
 nEf
 kHZ
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-nEf
-kHZ
 kHZ
 kHZ
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -146306,7 +146311,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -147652,7 +147657,7 @@ kHZ
 kHZ
 kHZ
 nEf
-nEf
+rpf
 nEf
 kHZ
 kHZ
@@ -148178,7 +148183,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -148832,7 +148837,7 @@ kHZ
 nEf
 nEf
 nEf
-nbg
+nEf
 nEf
 nEf
 kHZ
@@ -149093,7 +149098,7 @@ nEf
 nEf
 nEf
 nEf
-nbg
+nEf
 nEf
 kHZ
 kHZ
@@ -149212,7 +149217,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -149461,7 +149466,7 @@ nEf
 nEf
 nEf
 msl
-nEf
+rpf
 nEf
 kHZ
 kHZ
@@ -149656,7 +149661,7 @@ nEf
 msl
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 kHZ
@@ -150946,7 +150951,7 @@ kHZ
 kHZ
 kHZ
 nEf
-nEf
+rpf
 nEf
 nEf
 kHZ
@@ -151973,7 +151978,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 kHZ
@@ -152562,7 +152567,7 @@ nEf
 kHZ
 nEf
 nEf
-nEf
+rpf
 nEf
 kHZ
 kHZ
@@ -153752,13 +153757,13 @@ nEf
 nEf
 nEf
 nEf
+rpf
 nEf
 nEf
 nEf
 nEf
-nbg
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -153782,7 +153787,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -154044,7 +154049,7 @@ nEf
 nEf
 nEf
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -154109,7 +154114,7 @@ nEf
 nEf
 kHZ
 nEf
-nEf
+rpf
 nEf
 nEf
 msl
@@ -154272,10 +154277,10 @@ nEf
 nEf
 nEf
 nEf
+rpf
 nEf
 nEf
-nEf
-nEf
+rpf
 xoW
 nEf
 jkn
@@ -154531,7 +154536,7 @@ kHZ
 kHZ
 kHZ
 kHZ
-nbg
+nEf
 nEf
 kHZ
 kHZ
@@ -155309,7 +155314,7 @@ kHZ
 kHZ
 kHZ
 nEf
-nbg
+nEf
 nEf
 jkn
 jkn
@@ -155567,7 +155572,7 @@ kHZ
 kHZ
 kHZ
 msl
-nEf
+rpf
 nEf
 jkn
 jkn
@@ -156851,7 +156856,7 @@ nEf
 nEf
 nEf
 nEf
-nbg
+rpf
 nEf
 kHZ
 kHZ
@@ -157106,7 +157111,7 @@ seq
 oTg
 oTg
 nEf
-nEf
+rpf
 nEf
 nEf
 nEf
@@ -157367,7 +157372,7 @@ oTg
 nEf
 nEf
 nEf
-nbg
+nEf
 nEf
 nEf
 nEf
@@ -157883,10 +157888,10 @@ oTg
 nEf
 nEf
 nEf
+rpf
 nEf
 nEf
 nEf
-nbg
 nEf
 kHZ
 fyM
@@ -159173,7 +159178,7 @@ oTg
 oTg
 nEf
 nEf
-nEf
+rpf
 nEf
 kHZ
 kHZ
@@ -159696,7 +159701,7 @@ kHZ
 kHZ
 nEf
 nEf
-nbg
+rpf
 nEf
 nEf
 nEf
@@ -160209,7 +160214,7 @@ nEf
 nEf
 nEf
 nEf
-nbg
+nEf
 nEf
 nEf
 nEf

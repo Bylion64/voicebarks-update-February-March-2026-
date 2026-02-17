@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/structure/shipping_container/biosustain,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/beach)
 "ae" = (
 /obj/effect/turf_decal/sand,
 /obj/machinery/vending/clothing,
@@ -49,6 +53,7 @@
 	pixel_x = 11;
 	pixel_y = -1
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "aB" = (
@@ -65,7 +70,10 @@
 	pixel_y = 9;
 	pixel_x = -3
 	},
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "aE" = (
 /obj/item/cigbutt{
@@ -73,6 +81,22 @@
 	pixel_x = -13
 	},
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"aF" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
+"aM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
+"aN" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron/stairs/right{
+	dir = 1
+	},
 /area/awaymission/beach)
 "aT" = (
 /obj/machinery/shower/directional/west,
@@ -113,6 +137,13 @@
 	},
 /turf/open/water/beach,
 /area/awaymission/beach)
+"bv" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 0;
+	pixel_y = 15
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "bx" = (
 /obj/effect/turf_decal/sand,
 /obj/machinery/door/airlock/wood{
@@ -131,7 +162,11 @@
 	pixel_y = 6;
 	pixel_x = -4
 	},
-/turf/open/floor/wood/parquet,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "bz" = (
 /obj/structure/table/bronze,
@@ -140,7 +175,11 @@
 	pixel_x = -3
 	},
 /obj/machinery/light/directional/west,
-/turf/open/floor/wood/parquet,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "bC" = (
 /obj/vehicle/ridden/atv{
@@ -157,6 +196,9 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/awaymission/beach)
+"bM" = (
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "bY" = (
 /obj/structure/fluff/beach_umbrella/cap,
 /turf/open/misc/beach/sand,
@@ -171,6 +213,10 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"ck" = (
+/obj/machinery/telecomms/relay/preset/mining,
+/turf/open/floor/plating,
+/area/awaymission/beach)
 "cn" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/clothing/under/costume/lobster,
@@ -183,7 +229,18 @@
 /area/awaymission/beach)
 "cq" = (
 /obj/machinery/light/directional/west,
-/turf/open/floor/carpet/cyan,
+/turf/open/floor/carpet/gato,
+/area/awaymission/beach)
+"ct" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -11;
+	pixel_y = -1
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -3;
+	pixel_y = -14
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "cv" = (
 /obj/structure/table/wood,
@@ -195,9 +252,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "cw" = (
-/obj/structure/flora/tree/palm{
-	pixel_y = 24
-	},
+/obj/effect/turf_decal/siding/purple,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "cD" = (
@@ -218,6 +273,18 @@
 	dir = 4
 	},
 /area/awaymission/beach)
+"cN" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "cR" = (
 /turf/open/floor/iron/freezer,
 /area/awaymission/beach)
@@ -234,12 +301,11 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "cZ" = (
-/obj/machinery/door/airlock/wood{
-	name = "Room 1";
-	id_tag = "beach_room_1"
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
+	},
+/obj/machinery/door/airlock/wood/glass{
+	name = "Hotel's Facilities"
 	},
 /turf/open/floor/wood,
 /area/awaymission/beach)
@@ -261,7 +327,7 @@
 	dir = 6
 	},
 /obj/machinery/vending/cigarette/beach,
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "dh" = (
 /obj/machinery/vending/cola/pwr_game,
@@ -276,6 +342,7 @@
 	pixel_y = -11;
 	pixel_x = -15
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "dq" = (
@@ -287,13 +354,23 @@
 /area/awaymission/beach)
 "dr" = (
 /obj/structure/musician/piano,
-/turf/open/floor/wood,
+/turf/open/floor/wood/large,
+/area/awaymission/beach)
+"dx" = (
+/obj/structure/window/calorite/fulltile,
+/obj/structure/trap/fattening,
+/obj/structure/trap/fattening,
+/turf/open/floor/mineral/calorite,
 /area/awaymission/beach)
 "dL" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Locker Room"
 	},
-/turf/open/floor/wood/parquet,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "dO" = (
 /obj/effect/baseturf_helper/beach/water,
@@ -326,7 +403,21 @@
 	pixel_x = 7;
 	pixel_y = 8
 	},
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"eb" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 8;
+	pixel_y = -5
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -11;
+	pixel_y = 3
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "eE" = (
 /obj/structure/table/glass,
@@ -337,13 +428,34 @@
 	pixel_y = 2;
 	pixel_x = -12
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
+/area/awaymission/beach)
+"eF" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/awaymission/beach)
 "eH" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"eO" = (
+/turf/open/floor/iron/stairs/left{
+	dir = 1
+	},
 /area/awaymission/beach)
 "eT" = (
 /obj/structure/table/wood,
@@ -356,7 +468,29 @@
 	pixel_y = 9
 	},
 /obj/machinery/cell_charger,
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
+/area/awaymission/beach)
+"eU" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/awaymission/beach)
+"eV" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = 9;
+	pixel_y = -9
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "fa" = (
 /obj/structure/table/reinforced,
@@ -391,6 +525,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/cobweb,
+/obj/structure/marker_beacon/burgundy,
 /turf/open/floor/plating,
 /area/awaymission/beach)
 "fj" = (
@@ -411,6 +546,10 @@
 	pixel_x = -7;
 	pixel_y = 7
 	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"fq" = (
+/obj/effect/mob_spawn/corpse/human/syndicatecommando/lessenedgear,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "fu" = (
@@ -454,7 +593,18 @@
 	pixel_y = 6;
 	pixel_x = 4
 	},
-/turf/open/floor/wood/parquet,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/awaymission/beach)
+"fK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "fM" = (
 /obj/effect/turf_decal/siding/blue{
@@ -477,6 +627,11 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"fW" = (
+/obj/structure/closet/firecloset,
+/obj/effect/turf_decal/trimline/yellow,
+/turf/open/floor/iron,
 /area/awaymission/beach)
 "fX" = (
 /obj/structure/chair,
@@ -550,6 +705,26 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"gT" = (
+/obj/structure/filingcabinet{
+	pixel_x = 8;
+	pixel_y = 0
+	},
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	alpha = 200
+	},
+/obj/item/radio/intercom/chapel/directional/east,
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
+"hd" = (
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/iron,
+/area/awaymission/beach)
 "hf" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/water/beach,
@@ -610,6 +785,23 @@
 	},
 /turf/open/water/beach,
 /area/awaymission/beach)
+"hR" = (
+/turf/closed/wall/r_wall/plastitanium/nodiagonal,
+/area/awaymission/beach)
+"id" = (
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
+"ig" = (
+/obj/effect/turf_decal/tile/purple/full,
+/obj/machinery/vending/gato_merch,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/beach)
 "im" = (
 /obj/structure/table/bronze,
 /obj/structure/sign/poster/random/directional/east,
@@ -630,8 +822,11 @@
 /turf/open/floor/plastic,
 /area/awaymission/beach)
 "iw" = (
-/obj/structure/sign/poster/official/fruit_bowl/directional/north,
-/turf/open/floor/carpet,
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 4;
+	pixel_y = -12
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "iy" = (
 /obj/structure/sign/poster/contraband/pwr_game/directional/west,
@@ -650,6 +845,23 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"iH" = (
+/obj/effect/turf_decal/tile/purple/full,
+/obj/structure/table/reinforced/plasmarglass,
+/obj/item/book/lorebooks/welcome_to_gato{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/book/lorebooks/welcome_to_gato{
+	pixel_x = -1;
+	pixel_y = 0
+	},
+/obj/item/book/lorebooks/welcome_to_gato{
+	pixel_x = -5;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/beach)
 "iI" = (
 /mob/living/basic/crab,
 /obj/effect/turf_decal/stripes/red/line{
@@ -660,10 +872,10 @@
 "iJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/rack,
-/obj/effect/spawner/random/maintenance/three,
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/wheelchair,
+/obj/machinery/computer/gateway_control{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/awaymission/beach)
 "iM" = (
@@ -684,6 +896,7 @@
 	pixel_y = 5;
 	pixel_x = -6
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "iN" = (
@@ -736,6 +949,13 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/white/textured_large,
+/area/awaymission/beach)
+"js" = (
+/obj/structure/flora/coconuts,
+/obj/effect/turf_decal/siding/purple/corner{
+	dir = 1
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "jF" = (
 /obj/machinery/vending/boozeomat{
@@ -798,11 +1018,19 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"kf" = (
+/obj/item/pen/red{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "kh" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "kl" = (
 /obj/item/reagent_containers/cup/soda_cans/starkist{
@@ -871,6 +1099,17 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"kX" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 8;
+	pixel_y = 9
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "kZ" = (
 /turf/open/floor/eighties,
 /area/awaymission/beach)
@@ -899,6 +1138,18 @@
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"ln" = (
+/obj/structure/chair/beanbag/gato{
+	dir = 8
+	},
+/turf/open/floor/eighties,
+/area/awaymission/beach)
+"lo" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "ls" = (
 /obj/structure/flora/coconuts,
@@ -940,9 +1191,7 @@
 /area/awaymission/beach)
 "mf" = (
 /obj/item/toy/seashell,
-/turf/open/misc/beach/coast/corner{
-	dir = 8
-	},
+/turf/closed/wall/mineral/wood,
 /area/awaymission/beach)
 "mg" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -961,6 +1210,10 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"mo" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/parquet,
+/area/awaymission/beach)
 "mp" = (
 /obj/item/radio/off{
 	pixel_y = 16;
@@ -974,6 +1227,7 @@
 	pixel_y = 2
 	},
 /obj/structure/table/glass,
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "mD" = (
@@ -986,7 +1240,10 @@
 	pixel_x = 5
 	},
 /obj/machinery/light/directional/east,
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "mG" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1009,6 +1266,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "mO" = (
@@ -1032,6 +1290,7 @@
 	pixel_x = -3;
 	pixel_y = -2
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "mT" = (
@@ -1043,10 +1302,44 @@
 /obj/item/clothing/under/costume/sailor,
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"mV" = (
+/turf/closed/wall/mineral/calorite,
+/area/awaymission/beach)
+"mY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/marker_beacon/burgundy,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "ni" = (
 /turf/open/misc/beach/coast{
 	dir = 10
 	},
+/area/awaymission/beach)
+"no" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
 /area/awaymission/beach)
 "nq" = (
 /obj/effect/turf_decal/sand,
@@ -1090,14 +1383,19 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"nF" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 15;
+	pixel_y = -6
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "nK" = (
 /obj/machinery/medical_kiosk,
 /turf/open/floor/iron/white/textured_large,
 /area/awaymission/beach)
 "nO" = (
-/obj/item/kirbyplants/organic/plant8{
-	pixel_y = 5
-	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "nV" = (
@@ -1124,11 +1422,19 @@
 	},
 /turf/open/floor/plastic,
 /area/awaymission/beach)
+"oe" = (
+/obj/structure/closet/toolcloset,
+/obj/effect/turf_decal/trimline/yellow,
+/turf/open/floor/iron,
+/area/awaymission/beach)
 "oi" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/shower/directional/south,
 /obj/structure/sink/directional/east,
-/turf/open/floor/wood/parquet,
+/turf/open/floor/wood/large,
+/area/awaymission/beach)
+"ok" = (
+/turf/open/floor/carpet/gato,
 /area/awaymission/beach)
 "om" = (
 /obj/item/trash/can{
@@ -1156,6 +1462,13 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"ou" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "ow" = (
 /obj/machinery/reagentgrinder{
 	pixel_y = 15;
@@ -1166,7 +1479,10 @@
 	pixel_x = 12;
 	pixel_y = 3
 	},
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "oC" = (
 /obj/structure/closet/crate/bin,
@@ -1193,9 +1509,20 @@
 /obj/item/clothing/suit/apron/overalls,
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"oZ" = (
+/obj/item/toy/plush/gs13/gatito,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "pd" = (
 /obj/effect/turf_decal/siding/dark_red{
 	dir = 8
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"pp" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -3;
+	pixel_y = -6
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
@@ -1221,13 +1548,21 @@
 	pixel_y = 10;
 	pixel_x = -12
 	},
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "pw" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"pB" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/double_gato,
+/turf/open/floor/carpet/gato,
 /area/awaymission/beach)
 "pC" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1261,6 +1596,7 @@
 	pixel_y = 3;
 	pixel_x = -4
 	},
+/obj/effect/turf_decal/siding/purple/corner,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "pM" = (
@@ -1276,6 +1612,13 @@
 	name = "Docks"
 	},
 /turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"pS" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -3;
+	pixel_y = 11
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "pT" = (
 /obj/item/flashlight/flare/torch{
@@ -1303,6 +1646,7 @@
 	pixel_y = 9
 	},
 /obj/machinery/light/directional/south,
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "ql" = (
@@ -1329,6 +1673,27 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"qB" = (
+/obj/structure/filingcabinet{
+	pixel_x = 8;
+	pixel_y = 0
+	},
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	dir = 1;
+	alpha = 200
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/radio/intercom/chapel/directional/east,
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "qC" = (
 /obj/machinery/button/door/directional/west{
 	id = "beach_room_1";
@@ -1347,9 +1712,14 @@
 /turf/open/floor/plastic,
 /area/awaymission/beach)
 "re" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/suit/jacket/letterman_red,
-/turf/open/floor/wood,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "rq" = (
 /obj/structure/flora/tree/palm{
@@ -1358,9 +1728,19 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"rs" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/beach)
 "ru" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"ry" = (
+/obj/structure/shipping_container/gato2,
+/turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
 "rA" = (
 /obj/item/reagent_containers/cup/soda_cans/cola{
@@ -1380,6 +1760,10 @@
 "rF" = (
 /obj/machinery/grill,
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"rN" = (
+/obj/machinery/food_cart,
+/turf/open/floor/plating,
 /area/awaymission/beach)
 "rQ" = (
 /obj/structure/table/bronze,
@@ -1419,6 +1803,18 @@
 /obj/item/reagent_containers/cup/soda_cans/space_mountain_wind,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"sB" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/cigarette/cigar/havana{
+	pixel_x = 3;
+	pixel_y = 2
+	},
+/obj/item/cigarette/pipe{
+	pixel_x = -2;
+	pixel_y = 8
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "sL" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/siding/wood{
@@ -1452,22 +1848,42 @@
 "sS" = (
 /turf/open/floor/plastic,
 /area/awaymission/beach)
+"sT" = (
+/obj/item/stack/rods/ten,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "sU" = (
 /obj/item/toy/plush/moth{
 	pixel_y = 5
 	},
 /turf/open/floor/carpet/red,
 /area/awaymission/beach)
+"sY" = (
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/obj/structure/cursedfatfountain,
+/turf/open/floor/mineral/calorite,
+/area/awaymission/beach)
 "to" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /obj/machinery/shower/directional/south,
-/turf/open/floor/wood/parquet,
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "tr" = (
 /obj/structure/flora/tree/palm{
 	pixel_y = 6
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"ts" = (
+/obj/effect/turf_decal/siding/purple{
+	dir = 4
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
@@ -1502,6 +1918,7 @@
 /obj/effect/spawner/random/bureaucracy/pen{
 	pixel_x = 7
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "tE" = (
@@ -1555,11 +1972,17 @@
 	pixel_y = 5;
 	pixel_x = 13
 	},
+/obj/structure/chair/beanbag/gato{
+	dir = 4
+	},
 /turf/open/floor/eighties,
 /area/awaymission/beach)
 "ug" = (
 /obj/structure/chair/stool/directional/south,
 /turf/open/floor/iron/freezer,
+/area/awaymission/beach)
+"uh" = (
+/turf/closed/wall/r_wall/plastitanium,
 /area/awaymission/beach)
 "um" = (
 /obj/structure/table/bronze,
@@ -1574,6 +1997,7 @@
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "un" = (
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "uo" = (
@@ -1604,7 +2028,10 @@
 	pixel_x = 8
 	},
 /obj/machinery/light/directional/east,
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "uv" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1636,6 +2063,7 @@
 	pixel_y = 11;
 	pixel_x = 4
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "uL" = (
@@ -1658,6 +2086,23 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"uR" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/awaymission/beach)
 "uT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1692,6 +2137,13 @@
 "vc" = (
 /obj/structure/dresser,
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"vh" = (
+/obj/machinery/porta_turret/syndicate/fattening/heavy,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"vo" = (
+/turf/open/floor/iron/dark,
 /area/awaymission/beach)
 "vq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1731,9 +2183,18 @@
 	},
 /turf/open/floor/carpet,
 /area/awaymission/beach)
+"vO" = (
+/obj/effect/turf_decal/siding/purple{
+	dir = 8
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "vR" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"vU" = (
+/turf/open/floor/iron/dark/small,
 /area/awaymission/beach)
 "vX" = (
 /obj/structure/chair/stool/bamboo{
@@ -1742,13 +2203,17 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "wd" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"wl" = (
+/obj/item/stack/rods/ten,
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "wt" = (
 /obj/machinery/vending/cigarette/beach,
@@ -1781,6 +2246,17 @@
 	dir = 6
 	},
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"wH" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 4;
+	pixel_y = -10
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 17;
+	pixel_y = 5
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "wL" = (
 /obj/structure/table/bronze,
@@ -1843,6 +2319,10 @@
 "xv" = (
 /turf/closed/wall/mineral/wood,
 /area/awaymission/beach)
+"xz" = (
+/obj/structure/sign/gato,
+/turf/closed/wall/r_wall/plastitanium,
+/area/awaymission/beach)
 "xE" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/drinkingglasses{
@@ -1858,6 +2338,26 @@
 	pixel_x = 3
 	},
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"xG" = (
+/obj/item/toy/plush/gs13/gatito,
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 10;
+	pixel_y = -3
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -8;
+	pixel_y = 16
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -5;
+	pixel_y = -10
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 12;
+	pixel_y = 14
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "xI" = (
 /obj/effect/turf_decal/sand,
@@ -1914,11 +2414,33 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"yH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/structure/marker_beacon/burgundy,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
+"yJ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "yL" = (
 /obj/item/cigbutt{
 	pixel_y = -7;
 	pixel_x = 14
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "yO" = (
@@ -1950,6 +2472,10 @@
 	},
 /turf/open/misc/beach/coast,
 /area/awaymission/beach)
+"yW" = (
+/obj/effect/turf_decal/tile/purple/full,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/beach)
 "yX" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/wood/large,
@@ -1962,6 +2488,14 @@
 	specialfunctions = 4
 	},
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"zl" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "zp" = (
 /obj/structure/table/wood,
@@ -1994,6 +2528,7 @@
 	pixel_y = -6;
 	pixel_x = -12
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "zH" = (
@@ -2029,6 +2564,12 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/awaymission/beach)
+"zV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/floor/plating,
+/area/awaymission/beach)
 "zX" = (
 /obj/item/storage/toolbox/fishing{
 	pixel_x = 10
@@ -2051,8 +2592,43 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Ag" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/beach)
 "Ar" = (
 /turf/open/floor/carpet/blue,
+/area/awaymission/beach)
+"Au" = (
+/obj/structure/table/wood/fancy/orange,
+/obj/item/stack/sheet/mineral/calorite/ten,
+/obj/item/stack/sheet/mineral/calorite/ten,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/turf/open/floor/mineral/calorite,
 /area/awaymission/beach)
 "Av" = (
 /obj/item/reagent_containers/cup/soda_cans/cola{
@@ -2091,6 +2667,13 @@
 	dir = 8
 	},
 /turf/open/floor/iron/freezer,
+/area/awaymission/beach)
+"AS" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "AU" = (
 /obj/structure/fluff/beach_umbrella/syndi,
@@ -2164,13 +2747,23 @@
 	dir = 10
 	},
 /obj/machinery/vending/cola/red,
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "BQ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"BT" = (
+/turf/open/floor/iron/stairs/right{
+	dir = 1
+	},
+/area/awaymission/beach)
+"BZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/floor/plating,
 /area/awaymission/beach)
 "Cb" = (
 /obj/structure/table/wood,
@@ -2181,6 +2774,7 @@
 	pixel_x = -8;
 	pixel_y = -8
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "Cf" = (
@@ -2229,22 +2823,12 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "CF" = (
-/obj/structure/flora/tree/palm/style_2{
-	pixel_y = 25
+/obj/effect/spawner/random/structure/closet_empty/crate,
+/obj/item/storage/toolbox/fishing{
+	pixel_y = 2
 	},
-/obj/item/stack/sheet/mineral/sandstone/thirty{
-	pixel_y = -10;
-	pixel_x = -5
-	},
-/obj/item/stack/sheet/mineral/sandstone/thirty{
-	pixel_y = -2;
-	pixel_x = 9
-	},
-/obj/item/stack/sheet/mineral/sandstone/thirty{
-	pixel_y = -4;
-	pixel_x = 1
-	},
-/turf/open/misc/beach/sand,
+/obj/effect/spawner/random/maintenance/two,
+/turf/open/floor/plating,
 /area/awaymission/beach)
 "CG" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2266,15 +2850,20 @@
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"CK" = (
+/obj/structure/statue/calorite/pillar,
+/turf/open/floor/mineral/calorite,
+/area/awaymission/beach)
+"CL" = (
+/obj/structure/shipping_container/gato_defaced,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "CQ" = (
 /obj/machinery/space_heater,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "CR" = (
-/obj/structure/table/bronze,
-/obj/item/camera{
-	pixel_y = 5
-	},
+/obj/machinery/recharge_station,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "CY" = (
@@ -2282,7 +2871,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/turf/open/floor/wood/parquet,
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "Da" = (
 /obj/effect/turf_decal/sand,
@@ -2291,12 +2880,27 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"Di" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "Dj" = (
 /obj/item/kirbyplants/organic/plant8{
 	pixel_y = 4;
 	pixel_x = 8
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
+/area/awaymission/beach)
+"Dq" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -22;
+	pixel_y = 17
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Dv" = (
 /obj/item/storage/bag/tray,
@@ -2320,6 +2924,7 @@
 	name = "Holding Cell Storage"
 	},
 /obj/item/taperecorder,
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "DF" = (
@@ -2397,6 +3002,28 @@
 /obj/structure/table/bronze,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Ek" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/beach)
 "Em" = (
 /turf/open/floor/carpet/cyan,
 /area/awaymission/beach)
@@ -2432,6 +3059,15 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"ED" = (
+/obj/machinery/vending/clothing,
+/turf/open/floor/plastic,
+/area/awaymission/beach)
+"EE" = (
+/obj/item/radio/off,
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "EF" = (
 /obj/structure/railing/corner/end{
 	dir = 8
@@ -2442,7 +3078,7 @@
 /turf/open/water/beach,
 /area/awaymission/beach)
 "EG" = (
-/obj/machinery/recharge_station,
+/obj/machinery/vending/gato,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
 "EH" = (
@@ -2486,6 +3122,13 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/awaymission/beach)
+"EX" = (
+/obj/effect/decal/bigfatsigil{
+	color = "#ffd900"
+	},
+/obj/item/toy/plush/gs13/protogen,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Fb" = (
 /turf/open/misc/beach/coast{
 	dir = 4
@@ -2509,9 +3152,22 @@
 /obj/item/clothing/suit/jacket/letterman_syndie,
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"Fh" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "Fk" = (
 /obj/item/toy/seashell,
 /turf/open/misc/beach/coast,
+/area/awaymission/beach)
+"Fs" = (
+/obj/structure/shipping_container/orange,
+/turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
 "Ft" = (
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -2535,6 +3191,13 @@
 	pixel_y = 31
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Fx" = (
+/obj/effect/decal/gatofull_2{
+	pixel_x = 12;
+	pixel_y = 0
+	},
+/turf/closed/wall/mineral/wood,
 /area/awaymission/beach)
 "FB" = (
 /obj/effect/turf_decal/sand,
@@ -2579,6 +3242,13 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"FI" = (
+/obj/effect/decal/gatofull_1{
+	pixel_x = 12;
+	pixel_y = 0
+	},
+/turf/closed/wall/mineral/wood,
+/area/awaymission/beach)
 "FK" = (
 /obj/item/toy/seashell{
 	pixel_x = 12;
@@ -2620,11 +3290,22 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/awaymission/beach)
+"FW" = (
+/obj/machinery/light/directional/south,
+/obj/structure/table/bronze,
+/obj/machinery/cell_charger,
+/turf/open/floor/wood/large,
+/area/awaymission/beach)
 "FY" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Gb" = (
+/obj/effect/turf_decal/siding/purple,
+/obj/structure/billboard/gato,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Ge" = (
@@ -2672,6 +3353,10 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Gv" = (
+/obj/item/flashlight/flare/candle,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "GC" = (
 /turf/open/floor/carpet,
 /area/awaymission/beach)
@@ -2687,12 +3372,43 @@
 /obj/machinery/icecream_vat,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"GU" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/beach)
 "Ha" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/fueltank/large,
 /turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"Hb" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -11;
+	pixel_y = 0
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Hg" = (
 /obj/item/stack/sheet/mineral/sandstone{
@@ -2773,6 +3489,20 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/awaymission/beach)
+"Ij" = (
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Ik" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/bin{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "Il" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/misc/beach/sand,
@@ -2798,7 +3528,11 @@
 /obj/item/clothing/suit/costume/hawaiian{
 	pixel_x = -14
 	},
-/turf/open/floor/wood/parquet,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "II" = (
 /obj/machinery/shower/directional/west,
@@ -2828,7 +3562,10 @@
 	pixel_x = -5;
 	pixel_y = 9
 	},
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "Ji" = (
 /obj/effect/turf_decal/stripes/white/full,
@@ -2844,12 +3581,22 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"Jl" = (
+/obj/effect/turf_decal/siding/purple/corner{
+	dir = 4
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Jo" = (
 /obj/item/reagent_containers/cup/glass/bottle/beer/light{
 	pixel_x = -14;
 	pixel_y = 15
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Jp" = (
+/obj/structure/shipping_container/gato,
+/turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
 "Jr" = (
 /obj/machinery/light/directional/west,
@@ -2878,6 +3625,17 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"JL" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 10;
+	pixel_y = -7
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -4;
+	pixel_y = 6
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "JO" = (
 /obj/machinery/vending/cigarette/beach,
 /turf/open/misc/beach/sand,
@@ -2890,7 +3648,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood/corner,
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"JS" = (
+/obj/structure/shipping_container/donk_co,
+/turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
 "Ka" = (
 /obj/structure/bed/pod{
@@ -2904,6 +3666,24 @@
 	pixel_x = -4
 	},
 /turf/open/floor/iron/white/textured_large,
+/area/awaymission/beach)
+"Ke" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth_edge{
+	dir = 8
+	},
 /area/awaymission/beach)
 "Kh" = (
 /turf/open/misc/beach/coast/corner,
@@ -2922,6 +3702,20 @@
 	pixel_y = 9
 	},
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"Kp" = (
+/obj/effect/turf_decal/trimline/dark_blue/corner{
+	alpha = 200
+	},
+/obj/effect/turf_decal/siding/dark/corner,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
+"Ku" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 8;
+	pixel_y = -20
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Kw" = (
 /obj/item/reagent_containers/cup/soda_cans/dr_gibb{
@@ -2977,11 +3771,22 @@
 	},
 /turf/open/misc/beach/coast,
 /area/awaymission/beach)
-"KV" = (
-/obj/effect/decal/cleanable/dirt,
+"KR" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/structure/crate,
 /turf/open/floor/plating,
+/area/awaymission/beach)
+"KV" = (
+/obj/structure/table/wood/fancy/orange,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/obj/structure/reagent_dispensers/keg/lipoifier{
+	pixel_x = -1;
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/calorite,
 /area/awaymission/beach)
 "KW" = (
 /obj/structure/fluff/beach_umbrella/syndi,
@@ -2990,11 +3795,7 @@
 "La" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/structure/closet_empty/crate,
-/obj/effect/spawner/random/maintenance/two,
-/obj/item/storage/toolbox/fishing{
-	pixel_y = 2
-	},
+/obj/effect/landmark/awaystart/beach,
 /turf/open/floor/plating,
 /area/awaymission/beach)
 "Ld" = (
@@ -3015,6 +3816,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "Ll" = (
@@ -3042,6 +3844,10 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"Lx" = (
+/obj/item/gun/energy/fatoray,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "LC" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -3058,6 +3864,13 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"LM" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "LQ" = (
 /obj/effect/turf_decal/tile/dark_red/full,
 /obj/machinery/vending/cola/red,
@@ -3068,9 +3881,15 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"Ml" = (
+/turf/open/floor/plating,
+/area/awaymission/beach)
 "Mm" = (
 /obj/structure/table/bronze,
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "Mn" = (
 /obj/structure/table/wood,
@@ -3095,6 +3914,20 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"MC" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
+/area/awaymission/beach)
 "MD" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/random/entertainment/lighter,
@@ -3110,7 +3943,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/wood/corner,
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "MK" = (
 /turf/open/floor/iron/dark/herringbone,
@@ -3130,6 +3963,9 @@
 	pixel_y = -16;
 	pixel_x = -5
 	},
+/obj/structure/chair/beanbag/gato{
+	dir = 8
+	},
 /turf/open/floor/eighties,
 /area/awaymission/beach)
 "MP" = (
@@ -3139,6 +3975,9 @@
 	pixel_y = 5
 	},
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"MS" = (
+/turf/open/floor/iron,
 /area/awaymission/beach)
 "MT" = (
 /obj/structure/flora/tree/palm{
@@ -3168,8 +4007,8 @@
 /area/awaymission/beach)
 "Nb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/maintenance,
 /obj/machinery/light/small/directional/west,
+/obj/effect/landmark/awaystart/beach,
 /turf/open/floor/plating,
 /area/awaymission/beach)
 "Nd" = (
@@ -3185,6 +4024,7 @@
 /obj/effect/spawner/random/trash/cigbutt,
 /obj/effect/spawner/random/trash/food_packaging,
 /obj/machinery/light/directional/north,
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "Nf" = (
@@ -3228,6 +4068,13 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"Nx" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -18;
+	pixel_y = 10
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "NF" = (
 /obj/item/toy/seashell{
 	pixel_x = -10;
@@ -3245,7 +4092,10 @@
 "NS" = (
 /obj/structure/table/bronze,
 /obj/item/storage/bag/tray,
-/turf/open/floor/wood/large,
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/parquet,
 /area/awaymission/beach)
 "NU" = (
 /obj/machinery/vending/medical{
@@ -3253,9 +4103,62 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/awaymission/beach)
+"NY" = (
+/obj/effect/turf_decal/trimline/dark_blue/line{
+	alpha = 200;
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
+"Od" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = 1;
+	pixel_y = 3
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Of" = (
+/obj/structure/table/bronze,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/parquet,
+/area/awaymission/beach)
 "Og" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"Oh" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/beach)
+"Oj" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = 8;
+	pixel_y = 18
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "On" = (
 /obj/structure/chair{
@@ -3326,6 +4229,11 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"OV" = (
+/turf/open/floor/iron/stairs{
+	dir = 4
+	},
+/area/awaymission/beach)
 "Pb" = (
 /obj/item/fishing_rod,
 /obj/structure/closet/crate/trashcart,
@@ -3337,6 +4245,10 @@
 	dir = 5
 	},
 /area/awaymission/beach)
+"Pi" = (
+/obj/structure/sign/gato,
+/turf/closed/wall/mineral/wood,
+/area/awaymission/beach)
 "Pk" = (
 /obj/structure/table/glass,
 /obj/machinery/fax{
@@ -3345,13 +4257,26 @@
 	pixel_y = 8;
 	visible_to_network = 0
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "Pn" = (
 /obj/structure/chair/office{
 	dir = 8
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
+/area/awaymission/beach)
+"Ps" = (
+/obj/effect/turf_decal/trimline/dark_blue/corner{
+	alpha = 200;
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
 /area/awaymission/beach)
 "Pt" = (
 /obj/machinery/door/airlock/command/glass{
@@ -3365,8 +4290,16 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
+"Pv" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "Py" = (
 /obj/structure/tank_holder/extinguisher,
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "PH" = (
@@ -3384,6 +4317,14 @@
 /obj/effect/mob_spawn/corpse/human/old_pirate_captain,
 /obj/structure/bed/maint,
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"PW" = (
+/obj/structure/statue/calorite/fatty/huge{
+	pixel_x = -16;
+	pixel_y = -10
+	},
+/obj/structure/table/wood/fancy/orange,
+/turf/open/floor/mineral/calorite/strong,
 /area/awaymission/beach)
 "Qe" = (
 /obj/effect/turf_decal/sand,
@@ -3406,10 +4347,25 @@
 /obj/item/clothing/suit/jacket/miljacket,
 /turf/open/floor/wood,
 /area/awaymission/beach)
+"Qm" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 13;
+	pixel_y = 0
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Qn" = (
+/obj/structure/table/wood/fancy/orange,
+/obj/item/gavelhammer/fattening,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/mob/living/simple_animal/hostile/fatten/magehand,
+/turf/open/floor/mineral/calorite,
+/area/awaymission/beach)
 "Qr" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/food_cart,
-/turf/open/floor/plating,
+/turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
 "Qt" = (
 /obj/item/kirbyplants/organic/plant8{
@@ -3420,6 +4376,7 @@
 	pixel_y = -4;
 	pixel_x = 2
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
 /area/awaymission/beach)
 "QF" = (
@@ -3447,6 +4404,15 @@
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
+	},
+/turf/open/floor/wood,
+/area/awaymission/beach)
+"QL" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/machinery/door/airlock/wood/glass{
+	name = "Hotel's Facilities"
 	},
 /turf/open/floor/wood,
 /area/awaymission/beach)
@@ -3519,6 +4485,21 @@
 /obj/effect/turf_decal/stripes/red/box,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"Rp" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 10;
+	pixel_y = 14
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -10;
+	pixel_y = 4
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -9;
+	pixel_y = -12
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Rr" = (
 /obj/structure/flora/tree/palm{
 	pixel_y = 10;
@@ -3546,7 +4527,16 @@
 /obj/structure/chair/stool/bamboo{
 	dir = 1
 	},
-/turf/open/floor/wood/large,
+/turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"RF" = (
+/obj/structure/chair/comfy/shuttle{
+	pixel_y = 0;
+	dir = 4;
+	name = "adjustable office seat";
+	desc = "A comfortable, secure seat. It has a more sturdy looking buckling system, for smoother working sessions."
+	},
+/turf/open/floor/iron/dark/small,
 /area/awaymission/beach)
 "RI" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -3557,6 +4547,12 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/awaymission/beach)
+"RJ" = (
+/obj/machinery/computer{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/small,
+/area/awaymission/beach)
 "RQ" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/suit/hooded/carp_costume,
@@ -3565,11 +4561,54 @@
 /obj/item/toy/plush/shark,
 /turf/open/floor/eighties,
 /area/awaymission/beach)
+"RS" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/beach)
+"Sb" = (
+/obj/structure/flora/coconuts,
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -1;
+	pixel_y = 5
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Sd" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -3;
+	pixel_y = 18
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Sj" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Sn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
 /area/awaymission/beach)
 "Sr" = (
 /obj/structure/table/wood/fancy,
@@ -3598,7 +4637,14 @@
 /obj/structure/chair/stool/directional/south{
 	dir = 8
 	},
-/turf/open/floor/wood,
+/turf/open/floor/wood/large,
+/area/awaymission/beach)
+"Sy" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 0;
+	pixel_y = -11
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "SB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3616,6 +4662,30 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/awaymission/beach)
+"SY" = (
+/obj/effect/turf_decal/tile/purple/full,
+/obj/structure/table/reinforced/plasmarglass,
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 9;
+	pixel_y = 6
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/beach)
+"Tb" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 0;
+	pixel_y = -11
+	},
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 9;
+	pixel_y = 10
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Th" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/beaker/large{
@@ -3629,6 +4699,13 @@
 	},
 /turf/open/floor/eighties,
 /area/awaymission/beach)
+"To" = (
+/obj/effect/decal/gatofull_3{
+	pixel_x = 12;
+	pixel_y = 0
+	},
+/turf/closed/wall/mineral/wood,
+/area/awaymission/beach)
 "Tr" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/beach)
@@ -3637,6 +4714,16 @@
 /obj/item/clothing/neck/necklace/dope,
 /obj/item/clothing/suit/jacket/letterman,
 /turf/open/floor/wood,
+/area/awaymission/beach)
+"Ty" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "TC" = (
 /obj/effect/turf_decal/siding/blue{
@@ -3649,6 +4736,19 @@
 	dir = 4
 	},
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"TH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "TJ" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -3667,6 +4767,19 @@
 	},
 /obj/structure/table/glass,
 /turf/open/floor/iron/white/textured_large,
+/area/awaymission/beach)
+"TL" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/awaymission/beach)
 "TO" = (
 /obj/machinery/light/directional/west,
@@ -3687,6 +4800,16 @@
 	pixel_x = 8
 	},
 /turf/open/floor/iron/white/textured_large,
+/area/awaymission/beach)
+"Uc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "Ug" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3709,6 +4832,11 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Uh" = (
+/obj/machinery/door/airlock/hatch,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/awaymission/beach)
 "Uq" = (
 /obj/item/kirbyplants/organic/plant8{
 	pixel_y = 9;
@@ -3729,6 +4857,17 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Uv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/stairs{
+	dir = 4
+	},
+/area/awaymission/beach)
+"Uy" = (
+/obj/item/paperwork/research,
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "UB" = (
 /obj/structure/bed,
 /turf/open/floor/iron/dark/textured_large,
@@ -3743,12 +4882,54 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"UN" = (
+/obj/structure/showcase/machinery/tv/broken,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
+"UQ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/marker_beacon/burgundy,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
+"UU" = (
+/obj/effect/turf_decal/siding/purple/corner{
+	dir = 8
+	},
+/obj/structure/flora/tree/palm{
+	pixel_y = 24
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "UX" = (
 /obj/structure/flora/tree/palm/style_2{
 	pixel_y = 12;
 	pixel_x = -7
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Va" = (
+/obj/machinery/light/directional/west,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Vb" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/awaymission/beach)
 "Vc" = (
 /obj/structure/closet/gmcloset,
@@ -3765,6 +4946,17 @@
 	dir = 1
 	},
 /area/awaymission/beach)
+"Vh" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 0;
+	pixel_y = -16
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Vk" = (
+/obj/machinery/space_heater,
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
 "Vo" = (
 /obj/effect/turf_decal/sand,
 /obj/machinery/door/airlock/wood{
@@ -3780,6 +4972,11 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"VD" = (
+/obj/item/toy/plush/gs13/gatito,
+/obj/item/toy/plush/gs13/gatito,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "VG" = (
 /obj/structure/tank_holder/extinguisher,
 /turf/open/floor/wood/large,
@@ -3790,6 +4987,12 @@
 	pixel_y = -5
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"VJ" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth,
 /area/awaymission/beach)
 "VP" = (
 /obj/structure/dresser,
@@ -3855,6 +5058,17 @@
 /obj/effect/turf_decal/sand,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"Wp" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"Wq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Wv" = (
 /obj/item/reagent_containers/cup/soda_cans/starkist{
 	pixel_y = 16;
@@ -3890,6 +5104,38 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"WI" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge,
+/area/awaymission/beach)
+"WJ" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "WM" = (
 /obj/item/reagent_containers/cup/soda_cans/starkist{
 	pixel_x = -6
@@ -3903,6 +5149,23 @@
 	},
 /obj/item/clothing/head/soft/black,
 /turf/open/floor/wood/parquet,
+/area/awaymission/beach)
+"WR" = (
+/obj/effect/turf_decal/trimline/yellow/line{
+	dir = 8
+	},
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/siding/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/awaymission/beach)
+"WY" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = -7;
+	pixel_y = -11
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Xd" = (
 /obj/structure/table/optable,
@@ -3929,6 +5192,26 @@
 /area/awaymission/beach)
 "XB" = (
 /turf/open/water/beach,
+/area/awaymission/beach)
+"XG" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron/stairs/left{
+	dir = 1
+	},
+/area/awaymission/beach)
+"XO" = (
+/obj/structure/railing,
+/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/trimline/yellow/line,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_edge{
+	dir = 1
+	},
 /area/awaymission/beach)
 "XT" = (
 /obj/effect/turf_decal/siding/dark_red/corner{
@@ -3962,7 +5245,15 @@
 	pixel_y = 14;
 	pixel_x = 8
 	},
+/obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
+/area/awaymission/beach)
+"XZ" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = -7;
+	pixel_y = 18
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Yl" = (
 /obj/effect/turf_decal/sand/plating,
@@ -3972,6 +5263,13 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
+"Yo" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth,
+/area/awaymission/beach)
 "Yq" = (
 /obj/item/reagent_containers/cup/watering_can{
 	pixel_y = 19;
@@ -3979,9 +5277,35 @@
 	},
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Yz" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth_large,
+/area/awaymission/beach)
+"YA" = (
+/obj/effect/turf_decal/siding/wideplating/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark/half/contrasted{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron/smooth_edge{
+	dir = 8
+	},
+/area/awaymission/beach)
 "YB" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/wood/large,
+/area/awaymission/beach)
+"YI" = (
+/obj/item/toy/plush/gs13/gatito{
+	pixel_x = 12;
+	pixel_y = 10
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "YL" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -4007,6 +5331,10 @@
 /obj/machinery/recharge_station,
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/cyan,
+/area/awaymission/beach)
+"Zk" = (
+/obj/structure/shipping_container/deforest,
+/turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
 "Zm" = (
 /obj/item/toy/beach_ball,
@@ -4060,6 +5388,13 @@
 	pixel_x = 1
 	},
 /turf/open/floor/carpet,
+/area/awaymission/beach)
+"ZO" = (
+/obj/item/flashlight/flare/candle{
+	pixel_x = 0;
+	pixel_y = 8
+	},
+/turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "ZR" = (
 /obj/structure/chair/plastic,
@@ -9385,7 +10720,7 @@ xv
 xv
 xv
 tx
-Em
+ok
 Ts
 xv
 XB
@@ -9642,7 +10977,7 @@ JG
 Zp
 fj
 Gn
-Em
+ok
 ru
 xv
 XB
@@ -9899,7 +11234,7 @@ xv
 Zp
 xv
 Es
-jZ
+pB
 vc
 xv
 XB
@@ -10654,7 +11989,7 @@ XB
 pw
 Iw
 AG
-Em
+ok
 Gn
 lz
 Zp
@@ -10911,7 +12246,7 @@ XB
 CH
 Iw
 vc
-jZ
+pB
 hp
 xv
 Zp
@@ -10921,7 +12256,7 @@ GC
 cp
 xv
 Qk
-Em
+ok
 Nd
 xv
 Gu
@@ -11178,7 +12513,7 @@ GC
 ru
 xv
 LS
-Em
+ok
 Gn
 Wd
 Zp
@@ -11435,7 +12770,7 @@ vM
 Zt
 xv
 Qf
-jZ
+pB
 im
 xv
 Zp
@@ -11946,9 +13281,9 @@ Zp
 Zp
 UK
 Zp
+EG
 xv
-VY
-xv
+nO
 Zp
 Zp
 Zp
@@ -12469,8 +13804,8 @@ xv
 Zp
 cZ
 qC
-Em
-re
+Gn
+CR
 xv
 VY
 VY
@@ -12726,8 +14061,8 @@ xv
 Zp
 xv
 us
-Em
-ru
+Gn
+FW
 xv
 ah
 xv
@@ -12980,10 +14315,10 @@ Qf
 vM
 Zt
 xv
-oa
+Zp
 xv
 vc
-jZ
+Gn
 CR
 xv
 xv
@@ -13238,9 +14573,9 @@ xv
 xv
 xv
 Zp
+Pi
 xv
-xv
-xv
+QL
 xv
 xv
 Zs
@@ -14526,8 +15861,8 @@ bi
 ob
 sS
 sS
-xv
-iw
+FI
+GC
 GC
 ZH
 GC
@@ -14783,7 +16118,7 @@ Gi
 xv
 Bm
 sS
-xv
+Fx
 GC
 GC
 tU
@@ -14791,9 +16126,9 @@ GC
 GC
 GC
 Gf
-xv
+Pi
 GC
-GC
+Wl
 Wl
 Wl
 VY
@@ -14805,7 +16140,7 @@ VY
 VY
 xv
 dh
-kZ
+ln
 MO
 iy
 kZ
@@ -15040,8 +16375,8 @@ Ih
 xv
 Bm
 sS
-xv
-iw
+To
+GC
 GC
 fd
 GC
@@ -15050,8 +16385,8 @@ GC
 GC
 NH
 GC
-GC
-GC
+Wl
+Wl
 Wl
 VY
 VY
@@ -15307,10 +16642,10 @@ Zp
 xv
 xv
 cD
-GC
-GC
-GC
-VY
+Wl
+Wl
+Wl
+Wl
 VY
 VY
 ls
@@ -15550,7 +16885,7 @@ MV
 xv
 Ic
 xv
-Bm
+ED
 QF
 sS
 sS
@@ -15565,10 +16900,10 @@ Iw
 cD
 Lt
 Wl
-GC
-GC
-GC
-VY
+Wl
+Wl
+Wl
+Wl
 VY
 VY
 VY
@@ -15823,10 +17158,10 @@ Iw
 Lt
 Wl
 Wl
-GC
-GC
-GC
-VY
+Wl
+Wl
+Wl
+Wl
 VY
 VY
 VY
@@ -16081,10 +17416,10 @@ Lt
 Wl
 Wl
 VY
-GC
-GC
-GC
-VY
+Wl
+Wl
+Wl
+Wl
 VY
 VY
 VY
@@ -16339,10 +17674,10 @@ Wl
 ls
 VY
 VY
-GC
-GC
-GC
-VY
+Wl
+Wl
+Wl
+Wl
 VY
 VY
 ls
@@ -16581,10 +17916,10 @@ XB
 xv
 fi
 uT
-uT
+BZ
 Nb
 SB
-SB
+uT
 uT
 xv
 wt
@@ -16597,10 +17932,10 @@ VY
 VY
 VY
 VY
-GC
-GC
-GC
-VY
+Wl
+Wl
+Wl
+Wl
 VY
 VY
 Wl
@@ -16841,8 +18176,8 @@ FF
 Ge
 SB
 SB
-Qr
-KV
+uT
+Ge
 xv
 xv
 xv
@@ -16855,8 +18190,8 @@ GG
 VY
 VY
 bg
-GC
-GC
+Wl
+Wl
 Wl
 Wl
 Wl
@@ -17093,13 +18428,13 @@ XB
 XB
 XB
 xv
-Ge
+zV
 uT
-uT
+BZ
 vq
 La
-xv
-xv
+Ml
+Ml
 xv
 ls
 VY
@@ -17354,10 +18689,10 @@ xv
 xv
 lY
 YL
-xv
-xv
+ck
+rN
 CF
-VY
+xv
 VY
 VY
 jW
@@ -17612,9 +18947,9 @@ xv
 xv
 xv
 xv
-Fb
+xv
 mf
-VY
+xv
 KL
 jW
 jW
@@ -17896,9 +19231,9 @@ Zp
 MD
 fv
 Zp
-Mm
+Of
 RE
-Wa
+mo
 VY
 VY
 kl
@@ -18137,8 +19472,8 @@ wY
 nr
 VY
 VY
-xi
-xi
+xv
+xv
 xv
 Wl
 Wl
@@ -18153,9 +19488,9 @@ Th
 Mn
 zp
 Zp
-Mm
+Of
 RE
-Wa
+mo
 VY
 VY
 gP
@@ -18394,7 +19729,7 @@ wY
 jW
 GG
 VY
-xi
+xv
 ZX
 Gm
 Wl
@@ -18412,7 +19747,7 @@ Zp
 Zp
 pt
 RE
-Wa
+mo
 VY
 VY
 Av
@@ -18651,8 +19986,8 @@ jW
 jW
 GG
 VY
-xi
-xi
+xv
+xv
 xv
 Wl
 Wl
@@ -18908,7 +20243,7 @@ jW
 VY
 VY
 VY
-xi
+xv
 FB
 Vo
 Wl
@@ -19165,8 +20500,8 @@ VY
 wA
 VY
 xv
-xi
-xi
+xv
+xv
 xv
 Wl
 Wl
@@ -19181,7 +20516,7 @@ Zp
 Zp
 NS
 Mm
-Wa
+mo
 VY
 VY
 VY
@@ -19422,7 +20757,7 @@ VY
 VY
 VY
 VY
-xi
+xv
 xo
 Qe
 Wl
@@ -19936,7 +21271,7 @@ dO
 VY
 VY
 VY
-xv
+Pi
 JO
 Wl
 Wl
@@ -22255,9 +23590,9 @@ Wl
 Wl
 Wl
 pF
-VY
-VY
-VY
+ts
+ts
+Jl
 VY
 QO
 VY
@@ -22511,10 +23846,10 @@ VY
 Wl
 Wl
 VY
-VY
-VY
-VY
-VY
+Gb
+ig
+yW
+Ij
 VY
 VY
 GG
@@ -22768,10 +24103,10 @@ VY
 Wl
 Wl
 VY
-VY
-VY
-VY
-VY
+cw
+SY
+yW
+Ij
 VY
 EB
 VY
@@ -23026,9 +24361,9 @@ Wl
 Wl
 VY
 cw
-VY
-VY
-VY
+iH
+yW
+Ij
 VY
 VY
 VY
@@ -23282,10 +24617,10 @@ VY
 Wl
 Wl
 VY
-VY
-VY
-VY
-ls
+UU
+vO
+vO
+js
 VY
 Wl
 VY
@@ -25336,7 +26671,7 @@ Qg
 Qg
 Qg
 dL
-Qg
+Zp
 PN
 QN
 VY
@@ -25593,8 +26928,8 @@ Qg
 Qg
 Qg
 dL
-Qg
-Qg
+Zp
+Zp
 Da
 VY
 VY
@@ -25850,8 +27185,8 @@ xv
 Hq
 Qg
 xv
-Qg
-Qg
+Zp
+Zp
 Da
 VY
 VY
@@ -26107,8 +27442,8 @@ xv
 Hq
 Qg
 bz
-Qg
-Qg
+Zp
+Zp
 Da
 VY
 VY
@@ -26364,8 +27699,8 @@ xv
 xv
 Qg
 IE
-Qg
-Qg
+Zp
+Zp
 Da
 VY
 VY
@@ -26621,8 +27956,8 @@ cR
 xv
 Qg
 by
-Qg
-Qg
+Zp
+Zp
 Da
 VY
 VY
@@ -26878,7 +28213,7 @@ cR
 xv
 xv
 fI
-Qg
+Zp
 dq
 FY
 VY
@@ -27400,9 +28735,9 @@ wA
 VY
 CJ
 gR
-Gn
-Gn
-Gn
+Zp
+Zp
+Zp
 eH
 mJ
 IZ
@@ -27657,10 +28992,10 @@ VY
 VY
 rE
 dr
-Gn
-Gn
-Gn
-Gn
+Zp
+Zp
+Zp
+Zp
 Nl
 VY
 VY
@@ -27914,10 +29249,10 @@ VY
 VY
 Km
 Sw
-Gn
-Gn
-Gn
-Gn
+Zp
+Zp
+Zp
+Zp
 JQ
 VY
 Zm
@@ -41399,15 +42734,15 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+uh
+uh
+aB
+aB
+aB
+uh
+uh
+uh
 uX
 uX
 uX
@@ -41656,15 +42991,15 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+XB
+XB
+eO
+XG
+MS
+MS
+fW
+uh
 uX
 uX
 uX
@@ -41913,15 +43248,15 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+XB
+XB
+BT
+aN
+MS
+MS
+oe
+uh
 uX
 uX
 uX
@@ -42169,17 +43504,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+uh
+uh
+uh
+uh
+uh
+WR
+id
+uh
+uh
+uh
 uX
 uX
 uX
@@ -42426,17 +43761,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+Ik
+kf
+EE
+Uy
+UN
+vo
+vo
+sB
+Vk
+uh
 uX
 uX
 uX
@@ -42683,17 +44018,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+vo
+Kp
+NY
+NY
+NY
+NY
+NY
+Ps
+vo
+uh
 uX
 uX
 uX
@@ -42940,17 +44275,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+Sn
+gT
+vU
+RF
+vU
+RF
+vU
+qB
+Sn
+uh
 uX
 uX
 uX
@@ -43197,18 +44532,18 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+hd
+hR
+RJ
+RJ
+RJ
+RJ
+RJ
+hR
+Uh
+uh
+XB
 uX
 uX
 uX
@@ -43454,18 +44789,18 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+uh
+Uv
+xz
+aB
+aB
+aB
+aB
+aB
+xz
+OV
+uh
+XB
 uX
 uX
 uX
@@ -43710,19 +45045,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+GU
+fK
+Uc
+Di
+Di
+Di
+VJ
+Di
+Ty
+fK
+XO
+XB
 uX
 uX
 uX
@@ -43967,20 +45302,20 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+Oh
+yH
+Yo
+Yo
+Yo
+lo
+lo
+lo
+lo
+yH
+Vb
+XB
+XB
 uX
 uX
 uX
@@ -44224,21 +45559,21 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+Ek
+Qr
+Fs
+Qr
+ry
+Qr
+Jp
+Qr
+ry
+ry
+MC
+XB
+XB
+XB
 uX
 uX
 uX
@@ -44481,22 +45816,22 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+Ek
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+MC
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -44737,27 +46072,27 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+RS
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+MC
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -44993,29 +46328,29 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+Ag
+TH
+re
+re
+re
+re
+Fh
+re
+Fh
+cN
+uR
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -45247,33 +46582,33 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+Ek
+Qr
+Jp
+Qr
+JS
+Qr
+ab
+Yz
+Qr
+Qr
+MC
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -45503,35 +46838,35 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Ek
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+eF
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -45759,36 +47094,36 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+MZ
+Le
+Le
+ni
+XB
+XB
+Ek
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Yz
+MC
+XB
+MZ
+Le
+Le
+ni
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -46015,38 +47350,38 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+Vf
+VY
+VY
+BK
+XB
+XB
+WI
+yJ
+re
+re
+re
+re
+Fh
+Fh
+re
+UQ
+uR
+XB
+Vf
+VY
+VY
+hL
+ni
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -46271,39 +47606,39 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+Pe
+Fb
+Fb
+Rj
+XB
+XB
+Ek
+Qr
+Jp
+Qr
+JS
+Yz
+Qr
+ry
+Fs
+Qr
+MC
+XB
+Vf
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -46528,39 +47863,39 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+RS
+Qr
+Qr
+Qr
+Qr
+Yz
+Qr
+Qr
+Qr
+Qr
+MC
+XB
+Vf
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -46785,40 +48120,40 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+MZ
+RS
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+MC
+XB
+Pe
+tJ
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -47041,42 +48376,42 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+MZ
+MF
+WI
+TH
+re
+re
+Fh
+Fh
+Fh
+re
+Fh
+UQ
+uR
+XB
+XB
+Pe
+Fb
+Fb
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -47298,43 +48633,43 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+MZ
+MF
+VY
+Ek
+Yz
+Qr
+Qr
+Qr
+Zk
+Zk
+Qr
+Jp
+Qr
+TL
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -47554,44 +48889,44 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+MZ
+MF
+VY
+GG
+Ek
+Qr
+Yz
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+TL
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -47811,45 +49146,45 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+MZ
+MF
+VY
+VY
+VY
+Ek
+Qr
+Yz
+Yz
+Qr
+Qr
+Qr
+Qr
+Qr
+Qr
+MC
+Le
+ni
+XB
+MZ
+Le
+Le
+Le
+ni
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -48068,46 +49403,46 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+GG
+VY
+VY
+VY
+no
+mY
+aF
+rs
+Pv
+aF
+aF
+aF
+aF
+mY
+eU
+VY
+hL
+Le
+MF
+VY
+VY
+VY
+hL
+ni
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -48324,47 +49659,47 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+MZ
+MF
+VY
+VY
+VY
+VY
+uh
+KR
+aM
+Wq
+bM
+aM
+Ml
+bM
+bM
+aM
+uh
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -48580,48 +49915,48 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+xz
+uh
+YA
+wl
+Wq
+Ke
+Ml
+Ke
+KR
+uh
+xz
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -48836,50 +50171,50 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+ls
+VY
+VY
+Va
+Wq
+VY
+oZ
+Wq
+Wq
+Wq
+sT
+Va
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -49093,50 +50428,50 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+CL
+VY
+WJ
+VY
+Sy
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+Kh
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -49349,51 +50684,51 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+LM
+VY
+VY
+VY
+zl
+Ku
+VY
+VY
+VY
+VY
+oZ
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -49606,52 +50941,52 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+wA
+VY
+VY
+Wp
+VY
+VY
+VD
+VD
+nF
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+hL
+ni
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -49863,52 +51198,52 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+kX
+xG
+eb
+JL
+pS
+VY
+VY
+wA
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+hL
+ni
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -50120,52 +51455,52 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+ls
+VY
+VY
+ct
+Rp
+Tb
+wH
+Sb
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -50377,53 +51712,53 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+GG
+VY
+wA
+VY
+wA
+VY
+Dq
+VY
+oZ
+oZ
+wA
+VY
+VY
+VY
+ls
+VY
+oZ
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -50634,53 +51969,53 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+YI
+AS
+VY
+VY
+Nx
+Sd
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VI
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -50891,53 +52226,53 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+pp
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+ls
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -51148,53 +52483,53 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+iw
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+Kh
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -51405,53 +52740,53 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VI
+VY
+VY
+VY
+wA
+VY
+VY
+wA
+ls
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -51662,53 +52997,53 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+tJ
+VY
+VY
+VY
+VY
+ls
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -51920,52 +53255,52 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+ls
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -52177,52 +53512,52 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+wA
+VY
+ls
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -52435,51 +53770,51 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VY
+VY
+VY
+Qm
+oZ
+Qm
+VY
+VY
+VY
+ls
+VY
+wA
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+Kh
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -52692,51 +54027,51 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+tJ
+VY
+VY
+VY
+Vh
+eV
+Gv
+Oj
+bv
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -52950,50 +54285,50 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Vf
+VY
+VY
+VI
+oZ
+Od
+EX
+ZO
+oZ
+VY
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+Kh
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -53207,49 +54542,49 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+Fb
+tJ
+VY
+Vh
+WY
+ou
+XZ
+bv
+VY
+VY
+ls
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VI
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -53464,49 +54799,49 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+tJ
+GG
+Hb
+oZ
+Hb
+VY
+VY
+VY
+VY
+wA
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -53722,48 +55057,48 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+Fb
+tJ
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+Kh
+Fb
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -53980,46 +55315,46 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+Fb
+Fb
+tJ
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+VY
+Kh
+Fb
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -54239,44 +55574,44 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+tJ
+VY
+VY
+VY
+VI
+VY
+VY
+Kh
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -54497,41 +55832,41 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+Fb
+tJ
+VY
+VY
+VY
+VY
+BK
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -54754,40 +56089,40 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+Pe
+Fb
+Fb
+Fb
+Fb
+Rj
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -55013,38 +56348,38 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -55271,37 +56606,37 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -55529,35 +56864,35 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -55787,32 +57122,32 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -56045,31 +57380,31 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -56303,27 +57638,27 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -56565,18 +57900,18 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -56825,12 +58160,12 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -58304,15 +59639,15 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -58560,17 +59895,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -58816,19 +60151,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+MZ
+Le
+Le
+Le
+Le
+Le
+ni
+XB
+XB
+XB
 uX
 uX
 uX
@@ -59073,19 +60408,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+MZ
+MF
+VY
+VY
+VY
+VY
+VY
+hL
+ni
+XB
+XB
 uX
 uX
 uX
@@ -59330,19 +60665,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+mV
+dx
+dx
+dx
+mV
+VY
+BK
+XB
+XB
 uX
 uX
 uX
@@ -59587,19 +60922,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+dx
+CK
+Qn
+CK
+dx
+VY
+BK
+XB
+XB
 uX
 uX
 uX
@@ -59844,19 +61179,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+dx
+KV
+PW
+sY
+dx
+VY
+BK
+XB
+XB
 uX
 uX
 uX
@@ -60101,19 +61436,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+dx
+CK
+Au
+CK
+dx
+VY
+BK
+XB
+XB
 uX
 uX
 uX
@@ -60358,19 +61693,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+mV
+dx
+dx
+dx
+mV
+VY
+BK
+XB
+XB
 uX
 uX
 uX
@@ -60615,19 +61950,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Pe
+tJ
+VY
+VY
+VY
+VY
+VY
+Kh
+Rj
+XB
+XB
 uX
 uX
 uX
@@ -60872,19 +62207,19 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+Pe
+Fb
+Fb
+Fb
+Fb
+Fb
+Rj
+XB
+XB
+XB
 uX
 uX
 uX
@@ -61130,17 +62465,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -61388,15 +62723,15 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -65205,10 +66540,10 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -65460,13 +66795,13 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -65717,14 +67052,14 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+MZ
+Le
+Le
+ni
+XB
+XB
 uX
 uX
 uX
@@ -65973,16 +67308,16 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+MZ
+MF
+VY
+VY
+hL
+ni
+XB
+XB
 uX
 uX
 uX
@@ -66230,17 +67565,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+VY
+fq
+VY
+BK
+XB
+XB
+XB
 uX
 uX
 uX
@@ -66487,17 +67822,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+VY
+vh
+Lx
+vh
+hL
+ni
+XB
+XB
 uX
 uX
 uX
@@ -66744,17 +68079,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Vf
+wA
+VY
+VY
+VY
+VY
+BK
+XB
+XB
 uX
 uX
 uX
@@ -67001,17 +68336,17 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+Pe
+Fb
+Fb
+tJ
+VY
+Kh
+Rj
+XB
+XB
 uX
 uX
 uX
@@ -67258,16 +68593,16 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+Pe
+Fb
+Rj
+XB
+XB
 uX
 uX
 uX
@@ -67516,15 +68851,15 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
+XB
 uX
 uX
 uX
@@ -67776,10 +69111,10 @@ uX
 uX
 uX
 uX
-uX
-uX
-uX
-uX
+XB
+XB
+XB
+XB
 uX
 uX
 uX
