@@ -837,6 +837,7 @@
 	pixel_x = -7;
 	pixel_y = 5
 	},
+/obj/effect/light_emitter/tendril,
 /turf/open/floor/carpet/royalblue,
 /area/ruin/unpowered)
 "Wh" = (

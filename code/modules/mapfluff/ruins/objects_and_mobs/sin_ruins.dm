@@ -13,7 +13,7 @@
 	. = ..()
 	if(ishuman(mover))
 		var/mob/living/carbon/human/H = mover
-		if(H.nutrition >= NUTRITION_LEVEL_FAT)
+		if(H.fatness_real >= 2000) //GS13 EDIT (original: if(H.nutrition >= NUTRITION_LEVEL_FAT))
 			H.visible_message(span_warning("[H] pushes through [src]!"), span_notice("You've seen and eaten worse than this."))
 			return TRUE
 		else

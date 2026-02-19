@@ -51,5 +51,6 @@ _maps/RandomRuins/LavaRuins/lavaland_surface_ash_walker1.dmm
 
 ##GS13 MAPS
 #_maps/RandomRuins/LavaRuins/GS13/Lavaland_Ruin_BerryAltar.dmm
+#_maps/RandomRuins/LavaRuins/GS13/Lavaland_Ruin_CaloriteShrine.dmm
 
 ##GS13 MAPS END

@@ -18,10 +18,10 @@
 
 /obj/item/clothing/accessory/medal/gato_badge/coder
 	name = "Coder Badge"
-	desc = "Badge given to those who have contributed to GATO's restructurization efforts."
+	desc = "Badge given to those who have contributed to GATO's restructurization and development efforts. Pure platinum!"
 	icon_state = "coder"
 
 /obj/item/clothing/accessory/medal/gato_badge/contributor
 	name = "Contributor Badge"
-	desc = "Badge given to those who have contributed to GATO's restructurization efforts."
+	desc = "Badge given to those who have contributed to GATO's restructurization and development efforts. Pure platinum!"
 	icon_state = "contributor"
