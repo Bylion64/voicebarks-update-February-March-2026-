@@ -1796,10 +1796,7 @@
 /turf/open/floor/iron/lavaland_atmos,
 /area/ruin/unpowered)
 "Ys" = (
-/obj/machinery/door/airlock/hatch{
-	name = "airlock";
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/hatch,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
