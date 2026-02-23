@@ -51,7 +51,7 @@
 	// Alright, we have pain, now time for gain. How ripped are we getting from this?
 	var/muscle_gained = intensity * INTENSITY_TO_MUSCLE_RATIO
 	var/fatness_to_burn_through = (intensity * INTENSITY_TO_FAT_BURNED_RATIO) * weight_loss_rate
-	if((fatness_to_burn_through < fatness_real) && adjust_fatness(-fatness_to_burn_through, FATTENING_TYPE_WEIGHT_LOSS, TRUE)) // We have enough flab to burn.
+	if((fatness_to_burn_through < fatness_real) && adjust_fatness(-fatness_to_burn_through, FATTENING_TYPE_WEIGHT_LOSS)) // We have enough flab to burn.
 		muscle_gained += fatness_to_burn_through // Add burned fat as extra muscle mass. It doesn't need to make sense if it's hot.
 
 	adjust_muscle(muscle_gained)
