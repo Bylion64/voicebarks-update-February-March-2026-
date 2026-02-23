@@ -7035,6 +7035,7 @@
 #include "modular_gs\code\mechanics\recipes.dm"
 #include "modular_gs\code\mechanics\water_sponge.dm"
 #include "modular_gs\code\mechanics\xwg.dm"
+#include "modular_gs\code\mechanics\transformation\new_tf_item.dm"
 #include "modular_gs\code\mobs\chocoslime.dm"
 #include "modular_gs\code\modules\atmospherics\gasmixtures\gas_types.dm"
 #include "modular_gs\code\modules\atmospherics\gasmixtures\reactions.dm"

@@ -1,3 +1,7 @@
+/datum/loadout_item/inhand/tf_item
+	name = "Handheld Transmogrifier Soulcatcher"
+	item_path = /obj/item/portable_transmog
+
 /datum/loadout_item/toys/plush/sharky_plush
 	name = "Sharky Plush"
 	item_path = /obj/item/toy/plush/gs13/sharky
@@ -81,3 +85,8 @@
 /datum/loadout_item/toys/plush/swan_plush
 	name = "Swan plush"
 	item_path = /obj/item/toy/plush/gs13/swan
+
+/datum/loadout_item/toys/plush/swan_plush
+	name = "Swan plush"
+	item_path = /obj/item/toy/plush/gs13/swan
+

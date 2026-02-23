@@ -48,6 +48,7 @@
 				/obj/item/borg/upgrade/expand = 6,
 				/obj/item/borg/upgrade/shrink = 6,
 				/obj/item/reagent_containers/venom_milker = 5,
+				/obj/item/portable_transmog = 5, //GS13 Edit
 			),
 		),
 		list(
