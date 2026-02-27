@@ -172,6 +172,12 @@
 	soundpath = 'modular_gs/code/modules/bloopers/donuts_for_deerteeth/voice_typewriter.ogg'
 	minvariance = 0
 
+/datum/blooper/meow/dfd
+	name = "Meow 2"
+	id = "meow_2"
+	soundpath = 'modular_gs/code/modules/bloopers/meow_2.ogg'
+	minvariance = 0
+
 /datum/blooper/vox_deep
 	name = "Vox (Deep 1)"
 	id = "vox_deep_1"
