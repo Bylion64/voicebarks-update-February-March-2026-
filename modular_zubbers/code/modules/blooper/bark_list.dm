@@ -232,7 +232,7 @@
 /datum/blooper/susie
 	name = "Susie"
 	id = "susie"
-	soundpath = 'modular_zubbers/code/modules/blooper/voice/bloopers/undertale/voice_susie.ogg'
+	soundpath = 'modular_zubbers/code/modules/blooper/voice/bloopers/deltarune/voice_susie.ogg'
 	minvariance = 0
 
 /datum/blooper/tenna
